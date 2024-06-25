@@ -12,7 +12,6 @@ fs.readdir(path.join(__dirname, "routes"), (err, files) => {
     if (f.includes(".route.js")) {
       let name = f.replace(".route.js", "");
       let url = "/api/" + name;
-      console.log(url);
       app.use(url, require("./routes/" + f));
     }
   });
@@ -28,7 +27,7 @@ const startServer = async () => {
     console.log(
       "Connection to the database has been established successfully."
     );
-    await sequelize.sync({ force: true });
+    await sequelize.sync({ alter: true });
     console.log("Database synced successfully.");
 
     app.listen(3000, () => {
