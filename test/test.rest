@@ -1,0 +1,19 @@
+GET http://localhost:3333/
+
+###
+GET http://localhost:3333/api/bank/getAllBank
+
+###
+GET http://localhost:3333/api/bank
+
+###
+GET http://localhost:3333/api/bank/1
+
+###
+POST http://localhost:3333/api/finance/createBank
+content-type: application/json
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+

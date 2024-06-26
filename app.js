@@ -1,6 +1,6 @@
+require("dotenv").config({ path: `${process.cwd()}/.env` });
 const express = require("express");
-require("dotenv").config();
-const sequelize = require("./config/db");
+const db = require("./config/db");
 const fs = require("fs");
 const path = require("path");
 
@@ -13,25 +13,27 @@ fs.readdir(path.join(__dirname, "routes"), (err, files) => {
       let name = f.replace(".route.js", "");
       let url = "/api/" + name;
       app.use(url, require("./routes/" + f));
+      // console.log(url);
     }
   });
 });
 
 app.get("/", (req, res) => {
-  res.send("Hello, World!");
+  res.status(200).send("<h1>Welcome to CashFlow server!</h1>");
 });
 
+const port = process.env.PORT || 3334;
 const startServer = async () => {
   try {
-    await sequelize.authenticate();
+    await db.authenticate();
     console.log(
       "Connection to the database has been established successfully."
     );
-    await sequelize.sync({ alter: true });
+    await db.sync({ alter: true });
     console.log("Database synced successfully.");
 
-    app.listen(3000, () => {
-      console.log("Server is running on http://localhost:3000");
+    app.listen(port, () => {
+      console.log(`Server is running on ${port}`);
     });
   } catch (error) {
     console.error("Unable to connect to the database:", error);
