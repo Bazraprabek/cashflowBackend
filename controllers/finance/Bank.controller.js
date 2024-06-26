@@ -27,7 +27,9 @@ class BankController {
         currentModel.website = updatedValue.website;
         currentModel.swiftcode = updatedValue.swiftcode;
         currentModel.abbr = updatedValue.abbr;
-        return transaction;
+        currentModel.accountAvailable = updatedValue.accountAvailable;
+        currentModel.interestRate = updatedValue.interestRate;
+        return currentModel;
       }
     );
   }

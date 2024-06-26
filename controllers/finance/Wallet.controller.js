@@ -21,7 +21,7 @@ class WalletController {
       walletModel,
       function (updatedValue, currentModel) {
         currentModel.name = updatedValue.name;
-        return transaction;
+        return currentModel;
       }
     );
   }
