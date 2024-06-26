@@ -35,16 +35,16 @@ class CrudOperation {
 
   static async updateEntity(req, res, model, cb) {
     const { id } = req.params;
-    const updateValue = req.body;
+    const updatedValue = req.body;
     try {
       let currentModel = await model.findByPk(id);
       if (!currentModel) {
         return res.status(404).json({ error: "Transaction not found" });
       }
-      const updatedValue = cb(updateValue, currentModel);
-      await updatedValue.save();
+      const updatedModel = cb(updatedValue, currentModel);
+      await updatedModel.save();
 
-      res.json(updatedValue);
+      res.json(updatedModel);
     } catch (error) {
       res.status(400).json({ error: error.message });
     }
