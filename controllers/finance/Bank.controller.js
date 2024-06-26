@@ -15,7 +15,21 @@ class BankController {
   }
 
   static async updateBank(req, res) {
-    CRUD.updateEntity(req, res, BankModel);
+    CRUD.updateEntity(
+      req,
+      res,
+      BankModel,
+      function (updatedValue, currentModel) {
+        currentModel.bankName = updatedValue.bankName;
+        currentModel.address = updatedValue.address;
+        currentModel.email = updatedValue.email;
+        currentModel.contact = updatedValue.contact;
+        currentModel.website = updatedValue.website;
+        currentModel.swiftcode = updatedValue.swiftcode;
+        currentModel.abbr = updatedValue.abbr;
+        return transaction;
+      }
+    );
   }
 
   static async deleteBank(req, res) {

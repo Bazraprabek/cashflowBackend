@@ -1,6 +1,5 @@
-const { DataTypes, Model } = require("sequelize");
+const { DataTypes, Model, STRING } = require("sequelize");
 const sequelize = require("../config/db");
-const BankUtil = require("../utils/Bank");
 
 class Bank extends Model {}
 
@@ -10,19 +9,37 @@ Bank.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    address: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    contact: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    website: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    swiftcode: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     abbr: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
     },
     accountAvailable: {
-      type: DataTypes.STRING,
-      defaultValue: BankUtil.getBankTypes.SAVING,
+      type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: true,
     },
     interestRate: {
-      type: DataTypes.STRING,
-      //   defaultValue: BankUtil.useBankTypes()[1].rate,
+      type: DataTypes.ARRAY(DataTypes.DOUBLE),
       allowNull: true,
     },
   },

@@ -6,7 +6,6 @@ const {
   deleteBank,
   updateBank,
 } = require("../controllers/finance/Bank.controller");
-
 const router = express.Router();
 
 router.route("/createBank").post(createBank);

@@ -13,7 +13,7 @@ class CrudOperation {
       const entites = await model.findAll();
       if (entites.length > 0) res.status(200).json(entites);
       else {
-        res.status(204).json({ msg: "No data has been added" });
+        res.status(204).json({ error: "No data has been added" });
       }
     } catch (error) {
       res.status(500).json({ error: error.message });
@@ -33,17 +33,18 @@ class CrudOperation {
     }
   }
 
-  static async updateEntity(req, res, model) {
+  static async updateEntity(req, res, model, cb) {
     const { id } = req.params;
-    const updatedValue = req.body;
+    const updateValue = req.body;
     try {
-      let updatedEntity = await model.findByPk(id);
-      if (!updatedEntity) {
-        return res.status(204).json({ error: "Data was not found" });
+      let currentModel = await model.findByPk(id);
+      if (!currentModel) {
+        return res.status(404).json({ error: "Transaction not found" });
       }
-      updatedEntity = updatedValue;
-      await updatedEntity.save();
-      res.json(updatedEntity);
+      const updatedValue = cb(updateValue, currentModel);
+      await updatedValue.save();
+
+      res.json(updatedValue);
     } catch (error) {
       res.status(400).json({ error: error.message });
     }
