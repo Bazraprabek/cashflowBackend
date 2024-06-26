@@ -1,4 +1,5 @@
 class CrudOperation {
+  //
   static async createEntity(req, res, model) {
     try {
       const createdModel = await model.create(req.body);

@@ -1,4 +1,4 @@
-const walletModel = require("../../models/Wallet");
+const walletModel = require("../../models/finance/Wallet");
 const CRUD = require("../shared/CrudOperation");
 
 class WalletController {

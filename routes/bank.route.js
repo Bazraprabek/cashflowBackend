@@ -17,8 +17,4 @@ router
   .delete(isAdmin, deleteBank)
   .put(isAdmin, updateBank);
 
-router.route("/").get((req, res) => {
-  res.send("Welcome from bank section");
-});
-
 module.exports = router;

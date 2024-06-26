@@ -1,4 +1,4 @@
-const BankModel = require("../../models/Bank");
+const BankModel = require("../../models/finance/Bank");
 const CRUD = require("../shared/CrudOperation");
 
 class BankController {

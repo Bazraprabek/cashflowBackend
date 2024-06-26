@@ -17,8 +17,4 @@ router
   .delete(isAdmin, deleteWallet)
   .put(isAdmin, updateWallet);
 
-router.route("/").get((req, res) => {
-  res.send("Welcome from wallet section");
-});
-
 module.exports = router;

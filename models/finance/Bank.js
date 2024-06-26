@@ -1,5 +1,5 @@
-const { DataTypes, Model, STRING } = require("sequelize");
-const sequelize = require("../config/db");
+const { DataTypes, Model } = require("sequelize");
+const sequelize = require("../../config/db");
 
 class Bank extends Model {}
 
