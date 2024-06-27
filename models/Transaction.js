@@ -23,6 +23,10 @@ Transaction.init(
       type: DataTypes.FLOAT,
       allowNull: false,
     },
+    issuedAt: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
     remarks: {
       type: DataTypes.STRING,
       allowNull: false,
