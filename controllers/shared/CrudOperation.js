@@ -1,20 +1,28 @@
+const AppError = require("../../middleware/AppError");
+
 class CrudOperation {
   //
-  static async createEntity(req, res, model) {
+
+  static async createEntity(req, res, model, cb) {
     try {
-      const createdModel = await model.create(req.body);
-      res.status(201).json(createdModel);
+      const { nameValidation, dbValidation } = cb(req.body);
+      if (nameValidation && dbValidation) {
+        const createdModel = await model.create(req.body);
+        res.status(201).json(createdModel);
+      } else {
+        throw new AppError("Required Field must be there", 404);
+      }
     } catch (error) {
-      res.status(400).json({ error: error.message });
+      res.status(500).json({ error: error.message });
     }
   }
 
   static async getAllEntites(req, res, model) {
     try {
       const entites = await model.findAll();
-      if (entites.length > 0) res.status(200).json(entites);
+      if (entites.length > 0) res.status(200).json({ entities: entites });
       else {
-        res.status(404).json({ error: "No data has been added" });
+        throw new AppError("Data was not found", 404);
       }
     } catch (error) {
       res.status(500).json({ error: error.message });
@@ -26,7 +34,7 @@ class CrudOperation {
     try {
       let entityResult = await model.findByPk(id);
       if (!entityResult) {
-        return res.status(404).json({ error: "Data was not found" });
+        throw new AppError("Data was not found", 400);
       }
       res.json(entityResult);
     } catch (error) {
@@ -40,7 +48,7 @@ class CrudOperation {
     try {
       let currentModel = await model.findByPk(id);
       if (!currentModel) {
-        return res.status(404).json({ error: "Transaction not found" });
+        throw new AppError("Entity couldn't be found", 404);
       }
       const updatedModel = cb(updatedValue, currentModel);
       await updatedModel.save();

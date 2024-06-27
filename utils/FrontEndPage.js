@@ -3,9 +3,9 @@ class FrontEndPage {
     app.get("/", (req, res) => {
       res.status(200).send("<h1>Welcome to CashFlow server!</h1>");
     });
-    app.get("/*", (req, res) => {
-      res.status(200).send("<h1>Page was not found!</h1>");
-    });
+    // app.get("/*", (req, res) => {
+    //   res.status(200).send("<h1>Page was not found!</h1>");
+    // });
   }
 
   static renderBankPages(app) {
