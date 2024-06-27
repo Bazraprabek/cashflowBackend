@@ -1,9 +1,19 @@
-const walletModel = require("../../models/Wallet");
+const walletModel = require("../../models/finance/Wallet");
 const CRUD = require("../shared/CrudOperation");
 
 class WalletController {
   static async createWallet(req, res) {
-    CRUD.createEntity(req, res, walletModel);
+    CRUD.createEntity(req, res, walletModel, function (body) {
+      let nameValidation = true;
+      let dbValidation = true;
+      if (body.name) {
+        nameValidation = true;
+      } else {
+        nameValidation = false;
+        dbValidation = false;
+      }
+      return { nameValidation, dbValidation };
+    });
   }
 
   static async getAllWallet(req, res) {
@@ -21,7 +31,7 @@ class WalletController {
       walletModel,
       function (updatedValue, currentModel) {
         currentModel.name = updatedValue.name;
-        return transaction;
+        return currentModel;
       }
     );
   }
