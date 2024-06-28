@@ -1,31 +1,39 @@
 const walletModel = require("../../models/finance/Wallet");
-const CRUD = require("../shared/CrudOperation");
+const crud = require("../shared/CrudOperation");
+
+const AppError = require("../../middleware/AppError");
 
 class WalletController {
-  static async createWallet(req, res) {
-    CRUD.createEntity(req, res, walletModel, function (body) {
-      let nameValidation = true;
-      let dbValidation = true;
+  static createWallet(req, res, next) {
+    crud.createEntity(req, res, walletModel, next, async function (body) {
+      let mainValidation = false;
       if (body.name) {
-        nameValidation = true;
+        const dbResult = await walletModel.findOne({
+          where: { name: body.name },
+        });
+        if (dbResult) {
+          return next(new AppError("Name has already been created", 408));
+        } else {
+          console.log("Result not found");
+          mainValidation = true;
+          return mainValidation;
+        }
       } else {
-        nameValidation = false;
-        dbValidation = false;
+        return next(new AppError("please provide the required field", 500));
       }
-      return { nameValidation, dbValidation };
     });
   }
 
   static async getAllWallet(req, res) {
-    CRUD.getAllEntites(req, res, walletModel);
+    crud.getAllEntites(req, res, walletModel);
   }
 
   static async getWalletById(req, res) {
-    CRUD.getEntityById(req, res, walletModel);
+    crud.getEntityById(req, res, walletModel);
   }
 
   static async updateWallet(req, res) {
-    CRUD.updateEntity(
+    crud.updateEntity(
       req,
       res,
       walletModel,
@@ -37,7 +45,7 @@ class WalletController {
   }
 
   static async deleteWallet(req, res) {
-    CRUD.deleteEntity(req, res, walletModel);
+    crud.deleteEntity(req, res, walletModel);
   }
 }
 

@@ -1,31 +1,27 @@
+const { renderSuccessPage } = require("./Template");
+
 class FrontEndPage {
   static renderMainHomePage(app) {
-    app.get("/", (req, res) => {
-      res.status(200).send("<h1>Welcome to CashFlow server!</h1>");
-    });
-    // app.get("/*", (req, res) => {
-    //   res.status(200).send("<h1>Page was not found!</h1>");
-    // });
+    renderSuccessPage(app, "/", "Welcome to CashFlow server!!");
   }
 
   static renderBankPages(app) {
-    app.get("/api/bank", (req, res) => {
-      res.status(200).send("<h1>Welcome to Bank Home Page</h1>");
-    });
+    renderSuccessPage(app, "/api/bank", "Welcome to Bank Home Page !!!");
 
-    app.get("/api/bank/getAllBank/*", (req, res) => {
-      res.status(200).send("<h1>Sorry the page was not found</h1>");
-    });
+    renderSuccessPage(app, "/api/getAllBank", "ALl Bank Page !!!");
   }
 
   static renderWalletPages(app) {
-    app.get("/api/wallet", (req, res) => {
-      res.status(200).send("<h1>Welcome to Wallet Home Page</h1>");
-    });
+    renderSuccessPage(app, "/api/wallet", "Welcome to Wallet Home Page !!!");
+    renderSuccessPage(app, "/api/wallet/getAllWallet", "ALl Wallet Page !!!");
+  }
 
-    app.get("/api/wallet/getAllWallet/*", (req, res) => {
-      res.status(200).send("<h1>Sorry the page was not found</h1>");
-    });
+  static renderPageNotFound(app) {
+    renderSuccessPage(
+      app,
+      "*",
+      "Given path's page is missing. Try Something Different !!!"
+    );
   }
 }
 

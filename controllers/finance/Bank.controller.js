@@ -1,9 +1,31 @@
 const BankModel = require("../../models/finance/Bank");
 const CRUD = require("../shared/CrudOperation");
+const { errorHandler } = require("../../middleware/CatchAsync");
+const AppError = require("../../middleware/AppError");
 
 class BankController {
   static async createBank(req, res) {
-    CRUD.createEntity(req, res, BankModel);
+    CRUD.createEntity(
+      req,
+      res,
+      BankModel,
+      errorHandler(async function (body) {
+        let nameValidation = false;
+        let dbValidation = false;
+        let mainValidation = false;
+
+        const dbResult = await BankModel.findOne({
+          where: { bankName: body.bankName },
+        });
+        if (dbResult) {
+          nameValidation = true;
+          throw new AppError("Name has already been created", 404);
+        } else {
+          mainValidation = true;
+        }
+        return nameValidation;
+      })
+    );
   }
 
   static async getAllBank(req, res) {
