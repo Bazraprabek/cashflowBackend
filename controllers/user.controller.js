@@ -3,7 +3,11 @@ const CRUD = require("./shared/CrudOperation");
 
 class UserController {
   static async createuser(req, res) {
-    CRUD.createEntity(req, res, userModel);
+    CRUD.createEntity(req, res, userModel, function (body) {
+      let nameValidation = true;
+      let dbValidation = true;
+      return { nameValidation, dbValidation };
+    });
   }
 
   static async getAllUser(req, res) {

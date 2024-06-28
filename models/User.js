@@ -1,7 +1,12 @@
 const { DataTypes, Model } = require("sequelize");
 const sequelize = require("../config/db");
+const { hashPassword, comparePassword } = require("../utils/bcrypt");
 
-class User extends Model {}
+class User extends Model {
+  async validatePassword(password) {
+    return await comparePassword(password, this.password);
+  }
+}
 
 User.init(
   {
@@ -23,7 +28,7 @@ User.init(
       allowNull: true,
     },
     role: {
-      type: DataTypes.ENUM("user", "admin", "superadmin"), // Example enum values
+      type: DataTypes.ENUM("user", "admin", "superadmin"),
       allowNull: false,
       defaultValue: "user",
     },
@@ -35,6 +40,18 @@ User.init(
   {
     sequelize,
     modelName: "User",
+    hooks: {
+      beforeCreate: async (user) => {
+        if (user.password) {
+          user.password = await hashPassword(user.password);
+        }
+      },
+      beforeUpdate: async (user) => {
+        if (user.changed("password")) {
+          user.password = await hashPassword(user.password);
+        }
+      },
+    },
   }
 );
 
