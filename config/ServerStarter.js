@@ -2,6 +2,7 @@ const {
   renderBankPages,
   renderMainHomePage,
   renderWalletPages,
+  renderPageNotFound,
 } = require("../utils/FrontEndPage");
 
 class ServerStarter {
@@ -9,6 +10,7 @@ class ServerStarter {
     renderBankPages(app);
     renderMainHomePage(app);
     renderWalletPages(app);
+    renderPageNotFound(app);
   }
 
   static async startServer(app, db) {

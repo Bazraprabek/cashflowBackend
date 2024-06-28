@@ -32,3 +32,905 @@ Thu, 27 Jun 2024 06:14:51 GMT	POST	/api/wallet/createWallet	localhost:3333	Synta
     at IncomingMessage.emit (node:events:512:28)
     at endReadableNT (node:internal/streams/readable:1378:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)	Expected double-quoted property name in JSON at position 18	SyntaxError
+Fri, 28 Jun 2024 04:33:09 GMT	POST	/api/wallet/createWallet	localhost:3333	SyntaxError: Bad control character in string literal in JSON at position 17
+    at JSON.parse (<anonymous>)
+    at parse (D:\React\CBIT\cashflowBackend\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\React\CBIT\cashflowBackend\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (D:\React\CBIT\cashflowBackend\node_modules\raw-body\index.js:238:16)
+    at done (D:\React\CBIT\cashflowBackend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\React\CBIT\cashflowBackend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:512:28)
+    at endReadableNT (node:internal/streams/readable:1378:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)	Bad control character in string literal in JSON at position 17	SyntaxError
+Fri, 28 Jun 2024 06:58:48 GMT	POST	/api/	localhost:3333	Error: Something went wrong
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Something went wrong	Error
+Fri, 28 Jun 2024 06:59:50 GMT	POST	/api/	localhost:3333	Error: Something went wrong
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Something went wrong	Error
+Fri, 28 Jun 2024 06:59:51 GMT	POST	/api/	localhost:3333	Error: Something went wrong
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Something went wrong	Error
+Fri, 28 Jun 2024 07:00:34 GMT	POST	/api/	localhost:3333	Error: Something went wrong
+    at D:\React\CBIT\cashflowBackend\app.js:17:9
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Something went wrong	Error
+Fri, 28 Jun 2024 07:01:18 GMT	POST	/api/	localhost:3333	Error: Something went wrong
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Something went wrong	Error
+Fri, 28 Jun 2024 07:02:12 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:9
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:03 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:33 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:33 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:34 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:35 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:36 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:36 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:37 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:37 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:37 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:46 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:47 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:47 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:48 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:48 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:48 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:48 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:48 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:49 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:49 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:03:49 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:04:18 GMT	POST	/api/	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:05:22 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:05:23 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:05:23 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:05:24 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:05:24 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:05:25 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:05:25 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:05:26 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:05:27 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at catchError (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:4:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 07:08:53 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:9
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 09:55:31 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:9
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 09:56:37 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:15
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 09:56:41 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:15
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 09:56:42 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:15
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:53:07 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:15
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:12 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:14 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:18 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:18 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:19 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:19 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:19 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:19 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:19 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:20 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:20 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:20 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:20 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:20 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:21 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:22 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:22 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:22 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:22 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:22 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:22 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:23 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:23 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:23 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:54:23 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:11
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:56:02 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:15
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:56:03 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:15
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:56:03 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:15
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:56:04 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:15
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:56:04 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:15
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 13:56:04 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:17:15
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Path is missing	Error
+Fri, 28 Jun 2024 14:00:57 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:16
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 14:00:57 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:16
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 14:00:58 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:16
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 14:01:16 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:16
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 14:01:17 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:16
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 14:01:18 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:16
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error
+Fri, 28 Jun 2024 14:01:18 GMT	POST	/api/wallet/createWallet	localhost:3333	Error: Path is missing
+    at D:\React\CBIT\cashflowBackend\app.js:19:16
+    at errorHandler (D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:5)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\React\CBIT\cashflowBackend\node_modules\express\lib\middleware\init.js:40:5)	Path is missing	Error

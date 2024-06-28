@@ -29,18 +29,37 @@ class Logger {
   }
 
   static errorLogger(err, req, res, next) {
-    console.log(`${err.stack}\t${err.name}`);
+    console.log("Hello");
     new Logger().logEvents(
       `${req.method}\t${req.url}\t${req.headers.host}\t${err.stack}\t${err.message}\t${err.name}`,
       "error.log"
     );
 
-    res.status(404).json({
-      status: "error",
-      message: err.message,
-      stack: err.stack,
-    });
+    if (process.env.ENVIRONMENT === "development") {
+      console.log("From Dev");
+      return developmentError(err, res);
+    } else {
+      console.log("From prod");
+
+      return productionError(err, res);
+    }
   }
 }
+
+const developmentError = (err, res) => {
+  res.status(err.statusCode).json({
+    status: err.status,
+    message: err.message,
+    stack: err.stack,
+  });
+};
+
+const productionError = (err, res) => {
+  console.log("Prd error");
+  res.status(err.statusCode).json({
+    status: err.status,
+    message: err.message,
+  });
+};
 
 module.exports = Logger;

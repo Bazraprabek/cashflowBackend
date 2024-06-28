@@ -1,19 +1,17 @@
 const AppError = require("../../middleware/AppError");
+const CatchAsync = require("../../middleware/CatchAsync");
 
 class CrudOperation {
-  //
+  static async createEntity(req, res, model, next, cb) {
+    // console.log(req.body);
+    const validation = await cb(req.body);
 
-  static async createEntity(req, res, model, cb) {
-    try {
-      const { nameValidation, dbValidation } = cb(req.body);
-      if (nameValidation && dbValidation) {
-        const createdModel = await model.create(req.body);
-        res.status(201).json(createdModel);
-      } else {
-        throw new AppError("Required Field must be there", 404);
-      }
-    } catch (error) {
-      res.status(500).json({ error: error.message });
+    if (validation) {
+      const createdModel = await model.create(req.body);
+      res.status(201).json(createdModel);
+    } else {
+      // return next(new AppError("Please provide the required field", 400));
+      return next(new AppError("Please provide the required field", 400));
     }
   }
 
@@ -22,7 +20,7 @@ class CrudOperation {
       const entites = await model.findAll();
       if (entites.length > 0) res.status(200).json({ entities: entites });
       else {
-        throw new AppError("Data was not found", 404);
+        return new AppError("Data was not found", 404);
       }
     } catch (error) {
       res.status(500).json({ error: error.message });
@@ -34,7 +32,7 @@ class CrudOperation {
     try {
       let entityResult = await model.findByPk(id);
       if (!entityResult) {
-        throw new AppError("Data was not found", 400);
+        return new AppError("Data was not found", 400);
       }
       res.json(entityResult);
     } catch (error) {
@@ -48,7 +46,7 @@ class CrudOperation {
     try {
       let currentModel = await model.findByPk(id);
       if (!currentModel) {
-        throw new AppError("Entity couldn't be found", 404);
+        return new AppError("Entity couldn't be found", 404);
       }
       const updatedModel = cb(updatedValue, currentModel);
       await updatedModel.save();
