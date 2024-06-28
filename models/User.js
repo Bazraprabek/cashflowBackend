@@ -14,6 +14,23 @@ User.init(
       allowNull: false,
       unique: true,
     },
+    contact: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    address: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    role: {
+      type: DataTypes.ENUM("user", "admin", "superadmin"), // Example enum values
+      allowNull: false,
+      defaultValue: "user",
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
   {
     sequelize,
