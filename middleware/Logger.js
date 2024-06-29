@@ -29,24 +29,37 @@ class Logger {
   }
 
   static errorLogger(err, req, res, next) {
-    console.log("Hello");
     new Logger().logEvents(
       `${req.method}\t${req.url}\t${req.headers.host}\t${err.stack}\t${err.message}\t${err.name}`,
       "error.log"
     );
 
     if (process.env.ENVIRONMENT === "development") {
-      console.log("From Dev");
       return developmentError(err, res);
     } else {
-      console.log("From prod");
-
       return productionError(err, res);
     }
   }
 }
 
 const developmentError = (err, res) => {
+  console.log(err);
+  if (err.code === "ERR_UNHANDLED_REJECTION") {
+    res.status(err.statusCode).json({
+      status: err.status,
+      message: err.message,
+      stack: err.stack,
+    });
+  }
+
+  if (err.code === "SequelizeValidationError") {
+    res.status(err.statusCode).json({
+      status: err.status,
+      message: err.message,
+      stack: err.stack,
+    });
+  }
+
   res.status(err.statusCode).json({
     status: err.status,
     message: err.message,
