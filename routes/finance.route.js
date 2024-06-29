@@ -1,8 +1,9 @@
 const express = require("express");
-const transactionController = require("../controllers/transaction.controller");
 
 const router = express.Router();
 
-router.get("/", transactionController.index);
+router.get("/", (req, res) => {
+  res.status(200).send("<h1>Welcome to finance module. </h1>");
+});
 
 module.exports = router;
