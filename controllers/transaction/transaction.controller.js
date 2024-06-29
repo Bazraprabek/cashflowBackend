@@ -70,52 +70,11 @@ class transactionController {
   }
 
   static async createTransaction(req, res) {
-    const {
-      userId,
-      fullname,
-      financeId,
-      accountNumber,
-      status,
-      type,
-      amount,
-      issuedAt,
-      remarks,
-    } = req.body;
-
-    try {
-      // Ensure the user exists
-      const user = await User.findByPk(userId);
-      if (!user) {
-        return res.status(404).json({ error: "User not found" });
-      }
-
-      // Ensure the bank exists or create it
-      let financeRecord = await Finance.findOne({
-        where: { id: financeId, accountNumber },
-      });
-      // if (!financeRecord) {
-      //   financeRecord = await Finance.create({ name: "Prabhu", accountNumber });
-      // }
-      if (!financeRecord) {
-        return res.status(404).json({ error: "Finance not found" });
-      }
-
-      // Create the transaction
-      const transaction = await Transaction.create({
-        userId: user.id,
-        fullname,
-        financeId: financeRecord.id,
-        status,
-        type,
-        amount,
-        issuedAt,
-        remarks,
-      });
-
-      res.status(201).json(transaction);
-    } catch (error) {
-      res.status(400).json({ error: error.message });
-    }
+    CRUD.createEntity(req, res, Transaction, function (body) {
+      let nameValidation = true;
+      let dbValidation = true;
+      return { nameValidation, dbValidation };
+    });
   }
 
   static async updateTransaction(req, res) {
