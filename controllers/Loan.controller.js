@@ -1,63 +1,36 @@
-const Loan = require("../models/LoanModel");
+const { Loan } = require("../models/LoanModel");
+const CrudOperation = require("../controllers/shared/CrudOperation");
 
 class LoanController {
-  async createLoan(req, res) {
-    try {
-      const loan = await Loan.create(req.body);
-      res.status(201).json(loan);
-    } catch (error) {
-      res.status(500).json({ error: error.message });
-    }
+  createLoan(req, res) {
+    CrudOperation.createEntity(req, res, Loan, (data) => {
+      const nameValidation =
+        !!data.borrower &&
+        !!data.amount &&
+        !!data.interestRate &&
+        !!data.duration;
+      const dbValidation = true; // Add more validation logic if needed
+      return { nameValidation, dbValidation };
+    });
   }
 
-  async getAllLoans(req, res) {
-    try {
-      const loans = await Loan.findAll();
-      res.json(loans);
-    } catch (error) {
-      res.status(500).json({ error: error.message });
-    }
+  getAllLoans(req, res) {
+    CrudOperation.getAllEntites(req, res, Loan);
   }
 
-  async getLoanById(req, res) {
-    try {
-      const loan = await Loan.findByPk(req.params.id);
-      if (loan) {
-        res.json(loan);
-      } else {
-        res.status(404).json({ message: "Loan not found" });
-      }
-    } catch (error) {
-      res.status(500).json({ error: error.message });
-    }
+  getLoanById(req, res) {
+    CrudOperation.getEntityById(req, res, Loan);
   }
 
-  async updateLoan(req, res) {
-    try {
-      const loan = await Loan.findByPk(req.params.id);
-      if (loan) {
-        await loan.update(req.body);
-        res.json(loan);
-      } else {
-        res.status(404).json({ message: "Loan not found" });
-      }
-    } catch (error) {
-      res.status(500).json({ error: error.message });
-    }
+  updateLoan(req, res) {
+    CrudOperation.updateEntity(req, res, Loan, (updatedValue, currentModel) => {
+      Object.assign(currentModel, updatedValue);
+      return currentModel;
+    });
   }
 
-  async deleteLoan(req, res) {
-    try {
-      const loan = await Loan.findByPk(req.params.id);
-      if (loan) {
-        await loan.destroy();
-        res.status(204).end();
-      } else {
-        res.status(404).json({ message: "Loan not found" });
-      }
-    } catch (error) {
-      res.status(500).json({ error: error.message });
-    }
+  deleteLoan(req, res) {
+    CrudOperation.deleteEntity(req, res, Loan);
   }
 }
 
