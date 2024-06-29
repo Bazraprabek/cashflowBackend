@@ -7,6 +7,11 @@ const router = express.Router();
 
 router.post("/", UserController.createuser);
 router.get("/", UserController.getAllUser);
+router
+  .route("/:id")
+  .get(UserController.getUserById)
+  .put(UserController.updateUser)
+  .delete(UserController.deleteUser);
 router.post("/login", authController.login);
 router.post("/forgot-password", authController.forgotPassword);
 

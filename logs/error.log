@@ -1454,3 +1454,9 @@ Sat, 29 Jun 2024 06:17:59 GMT	GET	/2	localhost:3333	Error: Please authorized fir
     at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)
     at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:421:3)
     at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please authorized first	Error
+Sat, 29 Jun 2024 06:22:08 GMT	GET	/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getEntityById (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:29:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Sat, 29 Jun 2024 06:32:38 GMT	GET	/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getEntityById (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:29:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
