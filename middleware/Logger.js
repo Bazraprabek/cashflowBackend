@@ -43,7 +43,7 @@ class Logger {
 }
 
 const developmentError = (err, req, res) => {
-  console.log(err);
+  console.log("Devs Error  :::  ");
   const statusCode = err.statusCode || 500;
   const status = err.status || "error";
   const message = err.message || "Something went wrong!";
@@ -57,10 +57,13 @@ const developmentError = (err, req, res) => {
 };
 
 const productionError = (err, res) => {
-  console.log("Prd error");
-  res.status(err.statusCode).json({
-    status: err.status,
-    message: err.message,
+  console.log("Prod error :::");
+  const statusCode = err.statusCode || 500;
+  const status = err.status || "error";
+  const message = err.message || "Something went wrong!";
+  res.status(statusCode).json({
+    status: status,
+    message: message,
   });
 };
 

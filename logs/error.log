@@ -1464,3 +1464,135 @@ Sat, 29 Jun 2024 07:15:41 GMT	POST	/createCountry	localhost:3333	Error: Provided
     at C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\Master\Country.controller.js:21:15
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async CrudOperation.createEntity (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\shared\CrudOperation.js:5:24)	Provided entity name "Nepal" has already been registered. Try with other options.. 	Error
+Sat, 29 Jun 2024 08:49:38 GMT	GET	/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getEntityById (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:29:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Sat, 29 Jun 2024 08:50:02 GMT	POST	/createWallet	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Wallet.controller.js:23:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:5:24)	Given entity has already been registered, try with new one !!!	Error
+Sat, 29 Jun 2024 08:50:13 GMT	POST	/createWallet	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Wallet.controller.js:23:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:5:24)	Given entity has already been registered, try with new one !!!	Error
+Sat, 29 Jun 2024 08:50:40 GMT	POST	/createWallet	localhost:3333	Error: Please fill the required fields !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityPropsMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:33:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Wallet.controller.js:31:11
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:5:30)
+    at createWallet (D:\React\CBIT\cashflowBackend\controllers\finance\Wallet.controller.js:11:19)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:12:36)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)	Please fill the required fields !!!	Error
+Sat, 29 Jun 2024 08:52:39 GMT	POST	/createWallet	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Wallet.controller.js:23:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:5:24)	Given entity has already been registered, try with new one !!!	Error
+Sat, 29 Jun 2024 08:52:47 GMT	POST	/createWallet	localhost:3333	JsonWebTokenError: invalid signature
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (D:\React\CBIT\cashflowBackend\utils\jwt.js:20:14)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:10:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15	invalid signature	JsonWebTokenError
+Sat, 29 Jun 2024 08:53:01 GMT	POST	/createWallet	localhost:3333	Error: Please authorized first
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:17:19)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:47:12)	Please authorized first	Error
+Sat, 29 Jun 2024 08:54:52 GMT	POST	/createWallet	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:18:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Sat, 29 Jun 2024 08:55:07 GMT	POST	/createWallet	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Wallet.controller.js:23:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:5:24)	Given entity has already been registered, try with new one !!!	Error
+Sat, 29 Jun 2024 08:55:10 GMT	POST	/createWallet	localhost:3333	JsonWebTokenError: invalid signature
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (D:\React\CBIT\cashflowBackend\utils\jwt.js:20:14)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:11:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15	invalid signature	JsonWebTokenError
+Sat, 29 Jun 2024 08:55:12 GMT	POST	/createWallet	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Wallet.controller.js:23:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:5:24)	Given entity has already been registered, try with new one !!!	Error
+Sat, 29 Jun 2024 09:04:49 GMT	GET	/getAllWallet	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:18:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Sat, 29 Jun 2024 09:04:58 GMT	GET	/getAllWallet	localhost:3333	JsonWebTokenError: invalid signature
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (D:\React\CBIT\cashflowBackend\utils\jwt.js:20:14)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:11:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15	invalid signature	JsonWebTokenError
+Sat, 29 Jun 2024 09:05:16 GMT	GET	/getAllWallet	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:18:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Sat, 29 Jun 2024 09:06:36 GMT	GET	/getAllWallet	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:18:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error

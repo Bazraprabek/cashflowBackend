@@ -1,4 +1,4 @@
-const AppError = require("../../middleware/AppError");
+const { searchEntityMissingError } = require("../../utils/Const");
 
 class CrudOperation {
   static async createEntity(req, res, next, model, cb) {
@@ -11,14 +11,10 @@ class CrudOperation {
   }
 
   static async getAllEntites(req, res, next, model) {
-    try {
-      const entites = await model.findAll();
-      if (entites.length > 0) res.status(200).json({ entities: entites });
-      else {
-        return next(new AppError("Data was not found", 404));
-      }
-    } catch (error) {
-      res.status(500).json({ error: error.message });
+    const entites = await model.findAll();
+    if (entites.length > 0) res.status(200).json({ entities: entites });
+    else {
+      searchEntityMissingError(next);
     }
   }
 
@@ -26,7 +22,7 @@ class CrudOperation {
     const { id } = req.params;
     let entityResult = await model.findByPk(id);
     if (!entityResult) {
-      return next(new AppError("Data was not found", 400));
+      searchEntityMissingError(next);
     }
     res.json(entityResult);
   }
@@ -36,7 +32,7 @@ class CrudOperation {
     const updatedValue = req.body;
     let currentModel = await model.findByPk(id);
     if (!currentModel) {
-      return next(new AppError("Entity couldn't be found", 404));
+      searchEntityMissingError(next);
     }
     const updatedModel = cb(updatedValue, currentModel);
     await updatedModel.save();
@@ -48,7 +44,7 @@ class CrudOperation {
 
     let entityResult = await model.findByPk(id);
     if (!entityResult) {
-      return next(new AppError("Entity was not found", 404));
+      searchEntityMissingError(next);
     }
     await entityResult.destroy();
     res.status(200).json({ id: id, msg: "Deleted Successfully" });

@@ -1,14 +1,17 @@
 const walletModel = require("../../models/finance/Wallet");
 const { CrudOperation } = require("../shared/CrudOperation");
-const AppError = require("../../middleware/AppError");
+const {
+  entityAlreadyExistsError,
+  entityPropsMissingError,
+} = require("../../utils/Const");
 
 class WalletController {
   static createWallet(req, res, next) {
     CrudOperation.createEntity(
       req,
       res,
-      walletModel,
       next,
+      walletModel,
       async function (body) {
         let mainValidation = false;
         if (body.name) {
@@ -16,20 +19,13 @@ class WalletController {
             where: { name: body.name },
           });
           if (dbResult) {
-            return next(
-              new AppError(
-                `Provided entity name "${body.name}" has already been registered. Try with other options.. `,
-                408
-              )
-            );
+            entityAlreadyExistsError(next);
           } else {
-            console.log("Result not found");
             mainValidation = true;
             return mainValidation;
           }
         } else {
-          console.log("root");
-          return next(new AppError("please provide the required field", 500));
+          entityPropsMissingError(next);
         }
       }
     );

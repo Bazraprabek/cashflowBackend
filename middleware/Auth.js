@@ -1,4 +1,5 @@
 const User = require("../models/User");
+const { unAuthorizedError, noTokenError } = require("../utils/Const");
 const { verifyToken } = require("../utils/jwt");
 const AppError = require("./AppError");
 
@@ -11,10 +12,10 @@ class Auth {
 
       if (decode.role === "admin") next();
       else {
-        return next(new AppError("You are not authorized"), 400);
+        unAuthorizedError(next);
       }
     } else {
-      return next(new AppError("Please authorized first", 404));
+      noTokenError(next);
     }
   }
 
@@ -30,13 +31,13 @@ class Auth {
         if (findUser) {
           next();
         } else {
-          return next(new AppError("Please sign in your account"), 400);
+          noTokenError(next);
         }
       } else {
-        return next(new AppError("You are not authorized"), 400);
+        unAuthorizedError(next);
       }
     } else {
-      return next(new AppError("Please authorized first", 404));
+      unAuthorizedError(next);
     }
   }
 }
