@@ -1,10 +1,7 @@
-class CatchAsync {
-  static errorHandler(fn) {
-    const catchError = (req, res, next) => {
-      fn(req, res, next).catch(next);
-    };
-    return catchError;
-  }
-}
+const CatchAsync = (fn) => {
+  return (req, res, next) => {
+    fn(req, res, next).catch(next);
+  };
+};
 
 module.exports = CatchAsync;

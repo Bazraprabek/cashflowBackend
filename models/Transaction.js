@@ -7,20 +7,47 @@ class Transaction extends Model {}
 
 Transaction.init(
   {
-    fullname: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    status: {
-      type: DataTypes.STRING,
-      allowNull: false,
+    userId: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: User, // References the Finance model
+        key: "id", // Assumes the primary key of Finance model is 'id'
+      },
     },
     type: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        isIn: [["deposit", "withdraw", "transfer"]],
+      },
+    },
+    cashType: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isIn: [["cash", "cheque"]],
+      },
     },
     amount: {
       type: DataTypes.FLOAT,
+      allowNull: false,
+    },
+    fromAccountId: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: Finance, // References the Finance model
+        key: "id", // Assumes the primary key of Finance model is 'id'
+      },
+    },
+    toAccountId: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: Finance, // References the Finance model
+        key: "id", // Assumes the primary key of Finance model is 'id'
+      },
+    },
+    issuedAt: {
+      type: DataTypes.DATE,
       allowNull: false,
     },
     remarks: {
@@ -35,6 +62,15 @@ Transaction.init(
 );
 
 Transaction.belongsTo(User, { foreignKey: "userId" });
-Transaction.belongsTo(Finance, { foreignKey: "financeId" });
+Transaction.associate = (models) => {
+  Transaction.belongsTo(models.Finance, {
+    as: "fromAccount",
+    foreignKey: "fromAccountId",
+  });
+  Transaction.belongsTo(models.Finance, {
+    as: "toAccount",
+    foreignKey: "toAccountId",
+  });
+};
 
 module.exports = Transaction;

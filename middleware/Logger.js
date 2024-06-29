@@ -29,18 +29,39 @@ class Logger {
   }
 
   static errorLogger(err, req, res, next) {
-    console.log(`${err.stack}\t${err.name}`);
     new Logger().logEvents(
       `${req.method}\t${req.url}\t${req.headers.host}\t${err.stack}\t${err.message}\t${err.name}`,
       "error.log"
     );
 
-    res.status(404).json({
-      status: "error",
-      message: err.message,
-      stack: err.stack,
-    });
+    if (process.env.ENVIRONMENT === "development") {
+      return developmentError(err, req, res);
+    } else {
+      return productionError(err, res);
+    }
   }
 }
+
+const developmentError = (err, req, res) => {
+  console.log(err);
+  const statusCode = err.statusCode || 500;
+  const status = err.status || "error";
+  const message = err.message || "Something went wrong!";
+
+  res.status(statusCode).json({
+    status: status,
+    message: message,
+    stack: err.stack,
+    error: err,
+  });
+};
+
+const productionError = (err, res) => {
+  console.log("Prd error");
+  res.status(err.statusCode).json({
+    status: err.status,
+    message: err.message,
+  });
+};
 
 module.exports = Logger;
