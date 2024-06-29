@@ -1,7 +1,7 @@
 const AppError = require("../../middleware/AppError");
 
 class CrudOperation {
-  static async createEntity(req, res, model, next, cb) {
+  static async createEntity(req, res, next, model, cb) {
     const validation = await cb(req.body);
     console.log(validation);
     if (validation) {
