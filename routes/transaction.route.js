@@ -7,14 +7,15 @@ const {
   getTransactionById,
   getTransactionByMonthWise,
 } = require("../controllers/transaction/transaction.controller");
+const { isLoggedIn, isAdmin } = require("../middleware/Auth");
 
 const router = express.Router();
 
-router.get("/", index);
-router.post("/", createTransaction);
-router.get("/monthwise", getTransactionByMonthWise);
+router.get("/", isLoggedIn, index);
+router.post("/", isLoggedIn, createTransaction);
+router.get("/monthwise", isLoggedIn, getTransactionByMonthWise);
 router
-  .route("/:id")
+  .route("/:id", isLoggedIn)
   .put(updateTransaction)
   .delete(deleteTransaction)
   .get(getTransactionById);

@@ -35,7 +35,7 @@ class transactionController {
               ),
               year
             ),
-            type && { status: type },
+            type && { type: type },
           ],
         },
         group: [

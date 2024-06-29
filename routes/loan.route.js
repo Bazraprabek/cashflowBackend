@@ -6,9 +6,10 @@ const {
   deleteLoan,
   getLoanById,
 } = require("../controllers/loan.controller");
+const { isLoggedIn } = require("../middleware/Auth");
 
-router.get("/", index);
-router.post("/", createLoan);
-router.route("/:id").delete(deleteLoan).get(getLoanById);
+router.get("/", isLoggedIn, index);
+router.post("/", isLoggedIn, createLoan);
+router.route("/:id", isLoggedIn).delete(deleteLoan).get(getLoanById);
 
 module.exports = router;
