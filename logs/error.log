@@ -1464,3 +1464,32 @@ Sat, 29 Jun 2024 07:15:41 GMT	POST	/createCountry	localhost:3333	Error: Provided
     at C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\Master\Country.controller.js:21:15
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async CrudOperation.createEntity (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\shared\CrudOperation.js:5:24)	Provided entity name "Nepal" has already been registered. Try with other options.. 	Error
+Sat, 29 Jun 2024 11:45:14 GMT	GET	/	localhost:3334	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\Users\user\Desktop\cashflowBackend\controllers\shared\CrudOperation.js:18:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Sat, 29 Jun 2024 12:44:30 GMT	POST	/	localhost:3334	Error: Provided entity name "englishcha" has already been registered. Try with other options.. 
+    at C:\Users\user\Desktop\cashflowBackend\controllers\user.controller.js:22:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (C:\Users\user\Desktop\cashflowBackend\controllers\shared\CrudOperation.js:5:24)	Provided entity name "englishcha" has already been registered. Try with other options.. 	Error
+Sat, 29 Jun 2024 12:52:40 GMT	GET	/getAllWallet	localhost:3334	Error: You are not authorized
+    at isAdmin (C:\Users\user\Desktop\cashflowBackend\middleware\Auth.js:14:21)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:47:12)	You are not authorized	Error
+Sat, 29 Jun 2024 12:55:16 GMT	GET	/getAllWallet	localhost:3334	Error: You are not authorized
+    at isAdmin (C:\Users\user\Desktop\cashflowBackend\middleware\Auth.js:14:21)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:47:12)	You are not authorized	Error
