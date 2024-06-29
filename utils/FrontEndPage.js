@@ -17,11 +17,11 @@ class FrontEndPage {
   }
 
   static renderPageNotFound(app) {
-    renderSuccessPage(
-      app,
-      "*",
-      "Given path's page is missing. Try Something Different !!!"
-    );
+    // renderSuccessPage(
+    //   app,
+    //   "*",
+    //   "Given path's page is missing. Try Something Different !!!"
+    // );
   }
 }
 
