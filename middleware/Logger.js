@@ -35,35 +35,24 @@ class Logger {
     );
 
     if (process.env.ENVIRONMENT === "development") {
-      return developmentError(err, res);
+      return developmentError(err, req, res);
     } else {
       return productionError(err, res);
     }
   }
 }
 
-const developmentError = (err, res) => {
+const developmentError = (err, req, res) => {
   console.log(err);
-  if (err.code === "ERR_UNHANDLED_REJECTION") {
-    res.status(err.statusCode).json({
-      status: err.status,
-      message: err.message,
-      stack: err.stack,
-    });
-  }
+  const statusCode = err.statusCode || 500;
+  const status = err.status || "error";
+  const message = err.message || "Something went wrong!";
 
-  if (err.code === "SequelizeValidationError") {
-    res.status(err.statusCode).json({
-      status: err.status,
-      message: err.message,
-      stack: err.stack,
-    });
-  }
-
-  res.status(err.statusCode).json({
-    status: err.status,
-    message: err.message,
+  res.status(statusCode).json({
+    status: status,
+    message: message,
     stack: err.stack,
+    error: err,
   });
 };
 

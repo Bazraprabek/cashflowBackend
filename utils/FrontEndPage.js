@@ -8,12 +8,12 @@ class FrontEndPage {
   static renderBankPages(app) {
     renderSuccessPage(app, "/api/bank", "Welcome to Bank Home Page !!!");
 
-    renderSuccessPage(app, "/api/getAllBank", "ALl Bank Page !!!");
+    // renderSuccessPage(app, "/api/getAllBank", "ALl Bank Page !!!");
   }
 
   static renderWalletPages(app) {
     renderSuccessPage(app, "/api/wallet", "Welcome to Wallet Home Page !!!");
-    renderSuccessPage(app, "/api/wallet/getAllWallet", "ALl Wallet Page !!!");
+    // renderSuccessPage(app, "/api/wallet/getAllWallet", "ALl Wallet Page !!!");
   }
 
   static renderPageNotFound(app) {

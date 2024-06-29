@@ -8,7 +8,7 @@ const {
 } = require("../controllers/finance/Wallet.controller");
 
 const CatchAsync = require("../middleware/CatchAsync");
-const { isAdmin } = require("../middleware/Auth");
+const { isAdmin, isLoggedIn } = require("../middleware/Auth");
 const { errorLogger } = require("../middleware/Logger");
 
 const router = express.Router();
@@ -16,6 +16,7 @@ const router = express.Router();
 router.route("/createWallet").post(isAdmin, createWallet);
 
 router.route("/getAllWallet").get(
+  isAdmin,
   CatchAsync(async (req, res, next) => {
     await getAllWallet(req, res, next);
   })
@@ -24,6 +25,7 @@ router.route("/getAllWallet").get(
 router
   .route("/:id")
   .get(
+    isLoggedIn,
     CatchAsync(async (req, res, next) => {
       await getWalletById(req, res, next);
     })

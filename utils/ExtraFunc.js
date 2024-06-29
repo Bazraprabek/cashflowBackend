@@ -66,3 +66,56 @@ const create_Model = CatchAsync(async (req, res, next) => {
     }
   }
 });
+
+const developmentError = (err, res) => {
+  console.log("From dev error");
+  if (err.code === "ERR_UNHANDLED_REJECTION") {
+    res.status(err.statusCode).json({
+      status: err.status,
+      message: err.message,
+      stack: err.stack,
+    });
+  }
+
+  if (err.code === "SequelizeValidationError") {
+    res.status(err.statusCode).json({
+      status: err.status,
+      message: err.message,
+      stack: err.stack,
+    });
+  }
+
+  if (err.name === "ValidationError") {
+    statusCode = 400;
+    message = err.message || "Validation error";
+  }
+
+  if (err.name === "CastError") {
+    statusCode = 400;
+    message = `Invalid ${err.path}: ${err.value}`;
+  }
+  if (err.name === "TokenExpiredError") {
+    statusCode = 401;
+    message = "Your token has expired. Please log in again.";
+  }
+  if (err.name === "JsonWebTokenError") {
+    res.status(err.statusCode).json({
+      statusCode: 401,
+      message: "Invalid token. Please log in again.",
+    });
+  }
+  if (err.name === "NotBeforeError") {
+    statusCode = 401;
+    message = "Token not active. Please check your token validity.";
+  }
+
+  const statusCode = err.statusCode || 500;
+  const status = err.status || "error";
+  const message = err.message || "Something went wrong!";
+
+  res.status(statusCode).json({
+    status: status,
+    message: message,
+    // stack: err.stack,
+  });
+};
