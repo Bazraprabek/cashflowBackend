@@ -1173,3 +1173,9 @@ Sat, 29 Jun 2024 04:35:18 GMT	DELETE	/44	localhost:3333	Error: Entity was not fo
 Sat, 29 Jun 2024 04:55:57 GMT	GET	/44	localhost:3333	Error: Data was not found
     at CrudOperation.getEntityById (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:28:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Sat, 29 Jun 2024 05:06:37 GMT	GET	/44	localhost:3333	Error: Data was not found
+    at CrudOperation.getEntityById (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:28:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Sat, 29 Jun 2024 05:08:14 GMT	GET	/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getEntityById (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:28:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
