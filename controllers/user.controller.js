@@ -1,28 +1,29 @@
-const userModel = require("../models/User");
-const CRUD = require("./shared/CrudOperation");
+const User = require("../models/User");
+const { CrudOperation } = require("./shared/CrudOperation");
 
 class UserController {
-  static async createuser(req, res) {
-    CRUD.createEntity(req, res, userModel, function (body) {
+  static async createuser(req, res, next) {
+    CrudOperation.createEntity(req, res, next, User, function (body) {
       let nameValidation = true;
       let dbValidation = true;
       return { nameValidation, dbValidation };
     });
   }
 
-  static async getAllUser(req, res) {
-    CRUD.getAllEntites(req, res, userModel);
+  static async getAllUser(req, res, next) {
+    CrudOperation.getAllEntites(req, res, next, User);
   }
 
-  static async getUserById(req, res) {
-    CRUD.getEntityById(req, res, userModel);
+  static async getUserById(req, res, next) {
+    CrudOperation.getEntityById(req, res, next, User);
   }
 
-  static async updateUser(req, res) {
-    CRUD.updateEntity(
+  static async updateUser(req, res, next) {
+    CrudOperation.updateEntity(
       req,
       res,
-      userModel,
+      next,
+      User,
       function (updatedValue, currentModel) {
         currentModel.name = updatedValue.name;
         return currentModel;
@@ -31,7 +32,7 @@ class UserController {
   }
 
   static async deleteUser(req, res) {
-    CRUD.deleteEntity(req, res, userModel);
+    CrudOperation.deleteEntity(req, res, User);
   }
 }
 

@@ -1,16 +1,14 @@
-const Finance = require("../../models/Finance");
 const Transaction = require("../../models/Transaction");
-const User = require("../../models/User");
-const CRUD = require("../shared/CrudOperation");
+const { CrudOperation } = require("../shared/CrudOperation");
 const { Sequelize } = require("sequelize");
 
 class transactionController {
-  static async index(req, res) {
-    CRUD.getAllEntites(req, res, Transaction);
+  static async index(req, res, next) {
+    CrudOperation.getAllEntites(req, res, next, Transaction);
   }
 
-  static async getTransactionById(req, res) {
-    CRUD.getEntityById(req, res, Transaction);
+  static async getTransactionById(req, res, next) {
+    CrudOperation.getEntityById(req, res, next, Transaction);
   }
 
   static async getTransactionByMonthWise(req, res) {
@@ -69,18 +67,19 @@ class transactionController {
     }
   }
 
-  static async createTransaction(req, res) {
-    CRUD.createEntity(req, res, Transaction, function (body) {
+  static async createTransaction(req, res, next) {
+    CrudOperation.createEntity(req, res, next, Transaction, function (body) {
       let nameValidation = true;
       let dbValidation = true;
       return { nameValidation, dbValidation };
     });
   }
 
-  static async updateTransaction(req, res) {
-    CRUD.updateEntity(
+  static async updateTransaction(req, res, next) {
+    CrudOperation.updateEntity(
       req,
       res,
+      next,
       Transaction,
       function (updatedValue, currentModel) {
         currentModel.status = updatedValue.status;
@@ -92,8 +91,8 @@ class transactionController {
     );
   }
 
-  static async deleteTransaction(req, res) {
-    CRUD.deleteEntity(req, res, Transaction);
+  static async deleteTransaction(req, res, next) {
+    CrudOperation.deleteEntity(req, res, next, Transaction);
   }
 }
 
