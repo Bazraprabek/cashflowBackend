@@ -16,7 +16,7 @@ const router = express.Router();
 router.route("/createWallet").post(isAdmin, createWallet);
 
 router.route("/getAllWallet").get(
-  isAdmin,
+  isLoggedIn,
   CatchAsync(async (req, res, next) => {
     await getAllWallet(req, res, next);
   })

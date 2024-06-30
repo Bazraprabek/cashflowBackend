@@ -1,3 +1,4 @@
+const AppError = require("../middleware/AppError");
 const EMI = require("../models/Emi");
 const Loan = require("../models/Loan");
 const { calculateEMI } = require("../utils/emiCalculator");
@@ -12,9 +13,15 @@ class loanController {
     CrudOperation.getEntityById(req, res, next, Loan);
   }
 
-  static async createLoan(req, res) {
+  static async createLoan(req, res, next) {
     try {
       const { accountId, principal, interestRate, tenureMonths } = req.body;
+
+      if (!accountId || !principal || !interestRate || !tenureMonths) {
+        return next(
+          new AppError("Please provide all the required fields", 400)
+        );
+      }
 
       const loan = await Loan.create({
         accountId,

@@ -1,4 +1,5 @@
 const jwt = require("jsonwebtoken");
+const AppError = require("../middleware/AppError");
 
 const generateToken = (user) => {
   const payload = {
@@ -20,7 +21,21 @@ const verifyToken = (token) => {
   return jwt.verify(token, process.env.JWT_SECRET);
 };
 
+const verifyTokens = (userToken, req, next) => {
+  return jwt.verify(userToken, process.env.JWT_SECRET, (err, decoded) => {
+    if (err) {
+      console.log("errorrrrrrr::::", err);
+      let errorMessage = "Invalid token. Please log in again.";
+      return next(new AppError(errorMessage, 401));
+    } else {
+      req.user = decoded;
+      return decoded;
+    }
+  });
+};
+
 module.exports = {
   generateToken,
   verifyToken,
+  verifyTokens,
 };

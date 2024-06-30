@@ -1,6 +1,7 @@
 const User = require("../models/User");
 const { unAuthorizedError, noTokenError } = require("../utils/Const");
-const { verifyToken } = require("../utils/jwt");
+const { verifyToken, verifyTokens } = require("../utils/jwt");
+const jwt = require("jsonwebtoken");
 const AppError = require("./AppError");
 
 class Auth {
@@ -8,10 +9,11 @@ class Auth {
     const token = req.headers.authorization;
     if (token) {
       let userToken = token.split(" ")[1];
-      const decode = verifyToken(userToken);
-
-      if (decode.role === "admin") next();
-      else {
+      const decode = verifyTokens(userToken, req, next);
+      console.log("admin decode done");
+      if (decode.role === "admin") {
+        next();
+      } else {
         unAuthorizedError(next);
       }
     } else {
@@ -23,21 +25,12 @@ class Auth {
     const token = req.headers.authorization;
     if (token) {
       let userToken = token.split(" ")[1];
-      const decode = verifyToken(userToken);
-      if (decode) {
-        const findUser = await User.findOne({
-          where: { username: decode.username },
-        });
-        if (findUser) {
-          next();
-        } else {
-          noTokenError(next);
-        }
-      } else {
-        unAuthorizedError(next);
-      }
+      const decode = verifyTokens(userToken, req, next);
+      console.log(decode);
+      next();
     } else {
-      unAuthorizedError(next);
+      console.log("no token");
+      return noTokenError(next);
     }
   }
 }

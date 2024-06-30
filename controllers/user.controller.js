@@ -10,8 +10,8 @@ class UserController {
     CrudOperation.createEntity(
       req,
       res,
-      userModel,
       next,
+      userModel,
       async function (data) {
         console.log(data);
         let validation = false;

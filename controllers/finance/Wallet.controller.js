@@ -32,7 +32,7 @@ class WalletController {
   }
 
   static async getAllWallet(req, res, next) {
-    CrudOperation.getAllEntites(req, res, next, walletModel);
+    await CrudOperation.getAllEntites(req, res, next, walletModel);
   }
 
   static async getWalletById(req, res, next) {

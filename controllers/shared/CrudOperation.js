@@ -1,3 +1,4 @@
+const AppError = require("../../middleware/AppError");
 const { searchEntityMissingError } = require("../../utils/Const");
 
 class CrudOperation {
@@ -11,16 +12,35 @@ class CrudOperation {
   }
 
   static async getAllEntites(req, res, next, model) {
-    const entites = await model.findAll();
-    if (entites.length > 0) res.status(200).json({ entities: entites });
-    else {
-      searchEntityMissingError(next);
+    const { page = 1, limit = 10 } = req.query;
+    const offset = (page - 1) * limit;
+
+    try {
+      const entities = await model.findAndCountAll({
+        offset,
+        limit: parseInt(limit),
+      });
+
+      if (entities.rows.length > 0) {
+        const totalPages = Math.ceil(entities.count / limit);
+        res.status(200).json({
+          entities: entities.rows,
+          currentPage: parseInt(page),
+          totalPages,
+          totalEntities: entities.count,
+        });
+      } else {
+        return next(new AppError("Data was not found", 404));
+      }
+    } catch (error) {
+      res.status(500).json({ error: error.message });
     }
   }
 
   static async getEntityById(req, res, next, model) {
     const { id } = req.params;
     let entityResult = await model.findByPk(id);
+    console.log(entityResult);
     if (!entityResult) {
       searchEntityMissingError(next);
     }

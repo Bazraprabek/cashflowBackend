@@ -20,13 +20,13 @@ class BankController {
           });
           if (dbResult) {
             nameValidation = true;
-            entityAlreadyExistsError(next);
+            return entityAlreadyExistsError(next);
           } else {
             mainValidation = true;
             return nameValidation;
           }
         } else {
-          entityPropsMissingError(next);
+          return entityPropsMissingError(next);
         }
       }
     );
