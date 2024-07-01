@@ -1,6 +1,6 @@
 const AppError = require("../../middleware/AppError");
 const CurrencyModel = require("../../models/Master/Currency");
-const CrudOperation = require("../shared/CrudOperation");
+const {CrudOperation} = require("../shared/CrudOperation");
 
 class CurrencyController {
   static async createCurrency(req, res, next) {

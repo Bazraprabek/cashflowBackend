@@ -1,10 +1,12 @@
+const AppError = require("../../middleware/AppError");
+const Finance = require("../../models/Finance");
 const Transaction = require("../../models/Transaction");
 const { CrudOperation } = require("../shared/CrudOperation");
 const { Sequelize } = require("sequelize");
 
 class transactionController {
   static async index(req, res, next) {
-    CrudOperation.getAllEntites(req, res, next, Transaction);
+    CrudOperation.getAllEntites(req, res, next, Transaction, true);
   }
 
   static async getTransactionById(req, res, next) {
@@ -33,7 +35,7 @@ class transactionController {
               ),
               year
             ),
-            type && { status: type },
+            type && { type: type },
           ],
         },
         group: [
@@ -68,11 +70,99 @@ class transactionController {
   }
 
   static async createTransaction(req, res, next) {
-    CrudOperation.createEntity(req, res, next, Transaction, function (body) {
-      let nameValidation = true;
-      let dbValidation = true;
-      return { nameValidation, dbValidation };
-    });
+    try {
+      await CrudOperation.createEntity(
+        req,
+        res,
+        next,
+        Transaction,
+        async (body) => {
+          const {
+            type,
+            amount,
+            issuedAt,
+            cashType,
+            toAccountId,
+            fromAccountId,
+            remarks,
+          } = body;
+          req.body = {
+            type,
+            amount,
+            issuedAt,
+            toAccountId,
+            fromAccountId,
+            cashType,
+            userId: req.userId,
+            remarks,
+          };
+
+          // Check for essential fields
+          if (!type || !amount || !issuedAt) {
+            return next(
+              new AppError("Please provide all the required fields", 400)
+            );
+          }
+
+          // Validate transaction type and corresponding account IDs
+          const typeRequirements = {
+            deposit: {
+              required: "toAccountId",
+              missingMsg: "toAccountId for deposit transactions",
+            },
+            withdraw: {
+              required: "fromAccountId",
+              missingMsg: "fromAccountId for withdraw transactions",
+            },
+            transfer: {
+              required: ["toAccountId", "fromAccountId"],
+              missingMsg:
+                "both toAccountId and fromAccountId for transfer transactions",
+            },
+          };
+
+          const requirement = typeRequirements[type];
+          if (!requirement) {
+            return next(
+              new AppError(
+                "Invalid transaction type. Allowed types are: deposit, withdraw, transfer",
+                400
+              )
+            );
+          }
+
+          const requiredFields = Array.isArray(requirement.required)
+            ? requirement.required
+            : [requirement.required];
+          for (const field of requiredFields) {
+            if (!body[field]) {
+              return next(
+                new AppError(`Please provide ${requirement.missingMsg}`, 400)
+              );
+            }
+          }
+
+          // Vlaidate both account
+          if (toAccountId === fromAccountId) {
+            return next(new AppError(`Both Account cannot be same`, 404));
+          }
+
+          // Validate account existence
+          const accountIds = [toAccountId, fromAccountId].filter(Boolean);
+          for (const accountId of accountIds) {
+            const account = await Finance.findByPk(accountId);
+            if (!account) {
+              return next(new AppError(`Account does not exist.`, 404));
+            }
+          }
+
+          console.log("Validation passed");
+          return { mainValidation: true };
+        }
+      );
+    } catch (error) {
+      next(error);
+    }
   }
 
   static async updateTransaction(req, res, next) {

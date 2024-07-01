@@ -1,5 +1,8 @@
-const AppError = require("../middleware/AppError");
 const userModel = require("../models/User");
+const {
+  entityAlreadyExistsError,
+  entityPropsMissingError,
+} = require("../utils/Const");
 const { CrudOperation } = require("./shared/CrudOperation");
 
 class UserController {
@@ -7,8 +10,8 @@ class UserController {
     CrudOperation.createEntity(
       req,
       res,
-      userModel,
       next,
+      userModel,
       async function (data) {
         console.log(data);
         let validation = false;
@@ -18,24 +21,16 @@ class UserController {
               where: { username: data.username },
             });
             if (dbResult) {
-              return next(
-                new AppError(
-                  `Provided entity name "${data.username}" has already been registered. Try with other options.. `,
-                  408
-                )
-              );
+              entityAlreadyExistsError(next);
             } else {
-              console.log("Result not found");
               validation = true;
               return validation;
             }
           } else {
-            return next(
-              new AppError("The given field is required to be filled", 404)
-            );
+            entityPropsMissingError(next);
           }
         } else {
-          return next(new AppError("Please provide the required field", 404));
+          entityPropsMissingError(next);
         }
       }
     );

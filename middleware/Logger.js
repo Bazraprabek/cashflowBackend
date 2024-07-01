@@ -29,6 +29,10 @@ class Logger {
   }
 
   static errorLogger(err, req, res, next) {
+    const statusCode = err.statusCode || 500;
+    const status = err.status || "error";
+    const message = err.message || "Something went wrong!";
+    console.log("Global error handler");
     new Logger().logEvents(
       `${req.method}\t${req.url}\t${req.headers.host}\t${err.stack}\t${err.message}\t${err.name}`,
       "error.log"
@@ -43,12 +47,28 @@ class Logger {
 }
 
 const developmentError = (err, req, res) => {
-  console.log(err);
+  console.log(res.name);
+  console.log("Devs Error  :::  ");
   const statusCode = err.statusCode || 500;
   const status = err.status || "error";
   const message = err.message || "Something went wrong!";
 
-  res.status(statusCode).json({
+  if (err.name === "SequelizeValidationError") {
+    statusCode = 400;
+    message = err.errors[0].message;
+  }
+
+  if (err.name === "SequelizeUniqueConstraintError") {
+    statusCode = 400;
+    message = err.errors[0].message;
+  }
+
+  if (err.name === "SequelizeDatabaseError") {
+    statusCode = 400;
+    message = err.errors[0].message;
+  }
+
+  return res.status(statusCode).json({
     status: status,
     message: message,
     stack: err.stack,
@@ -57,10 +77,13 @@ const developmentError = (err, req, res) => {
 };
 
 const productionError = (err, res) => {
-  console.log("Prd error");
-  res.status(err.statusCode).json({
-    status: err.status,
-    message: err.message,
+  console.log("Prod error :::");
+  const statusCode = err.statusCode || 500;
+  const status = err.status || "error";
+  const message = err.message || "Something went wrong!";
+  return res.status(statusCode).json({
+    status: status,
+    message: message,
   });
 };
 

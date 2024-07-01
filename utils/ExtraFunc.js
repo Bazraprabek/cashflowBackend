@@ -77,6 +77,30 @@ const developmentError = (err, res) => {
     });
   }
 
+  if (err instanceof UniqueConstraintError) {
+    // Custom handling for unique constraint errors
+    const errors = err.errors.map((e) => e.message);
+    res.status(400).json({
+      status: "error",
+      message: "Unique constraint error",
+      errors,
+    });
+  } else if (err instanceof ValidationError) {
+    // Custom handling for validation errors
+    const errors = err.errors.map((e) => e.message);
+    res.status(400).json({
+      status: "error",
+      message: "Validation error",
+      errors,
+    });
+  } else {
+    // General error handling
+    res.status(500).json({
+      status: "error",
+      message: err.message || "Internal Server Error",
+    });
+  }
+
   if (err.code === "SequelizeValidationError") {
     res.status(err.statusCode).json({
       status: err.status,
