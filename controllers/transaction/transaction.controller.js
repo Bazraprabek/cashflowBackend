@@ -6,7 +6,7 @@ const { Sequelize } = require("sequelize");
 
 class transactionController {
   static async index(req, res, next) {
-    CrudOperation.getAllEntites(req, res, next, Transaction);
+    CrudOperation.getAllEntites(req, res, next, Transaction, true);
   }
 
   static async getTransactionById(req, res, next) {
@@ -77,11 +77,28 @@ class transactionController {
         next,
         Transaction,
         async (body) => {
-          const { userId, type, amount, issuedAt, toAccountId, fromAccountId } =
-            body;
+          const {
+            type,
+            amount,
+            issuedAt,
+            cashType,
+            toAccountId,
+            fromAccountId,
+            remarks,
+          } = body;
+          req.body = {
+            type,
+            amount,
+            issuedAt,
+            toAccountId,
+            fromAccountId,
+            cashType,
+            userId: req.userId,
+            remarks,
+          };
 
           // Check for essential fields
-          if (!userId || !type || !amount || !issuedAt) {
+          if (!type || !amount || !issuedAt) {
             return next(
               new AppError("Please provide all the required fields", 400)
             );
@@ -125,17 +142,17 @@ class transactionController {
             }
           }
 
+          // Vlaidate both account
+          if (toAccountId === fromAccountId) {
+            return next(new AppError(`Both Account cannot be same`, 404));
+          }
+
           // Validate account existence
           const accountIds = [toAccountId, fromAccountId].filter(Boolean);
           for (const accountId of accountIds) {
             const account = await Finance.findByPk(accountId);
             if (!account) {
-              return next(
-                new AppError(
-                  `Account with ID "${accountId}" does not exist.`,
-                  404
-                )
-              );
+              return next(new AppError(`Account does not exist.`, 404));
             }
           }
 

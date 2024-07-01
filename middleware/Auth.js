@@ -30,7 +30,7 @@ class Auth {
         });
 
         if (findUser) {
-          req.user = decode.id;
+          req.userId = decode.id;
           next();
         } else {
           return next(new AppError("Please sign in to your account.", 400));

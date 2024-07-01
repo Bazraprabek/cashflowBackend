@@ -10,12 +10,18 @@ class CrudOperation {
     }
   }
 
-  static async getAllEntites(req, res, next, model) {
+  static async getAllEntites(req, res, next, model, userVerify) {
     const { page = 1, limit = 10 } = req.query;
     const offset = (page - 1) * limit;
+    let where = {};
+    if (userVerify) {
+      const userId = req.userId;
+      where = { userId };
+    }
 
     try {
       const entities = await model.findAndCountAll({
+        where,
         offset,
         limit: parseInt(limit),
       });
