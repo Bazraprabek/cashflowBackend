@@ -71,6 +71,7 @@ class CrudOperation {
     const { id } = req.params;
 
     let entityResult = await model.findByPk(id);
+    console.log(entityResult);
     if (!entityResult) {
       searchEntityMissingError(next);
     }
