@@ -5,6 +5,7 @@ class EMI extends Model {}
 
 EMI.init(
   {
+    loanId: { type: DataTypes.INTEGER, allowNull: false },
     amount: { type: DataTypes.FLOAT, allowNull: false },
     dueDate: { type: DataTypes.DATE, allowNull: false },
     status: {
