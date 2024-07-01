@@ -1464,3 +1464,32 @@ Sat, 29 Jun 2024 07:15:41 GMT	POST	/createCountry	localhost:3333	Error: Provided
     at C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\Master\Country.controller.js:21:15
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async CrudOperation.createEntity (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\shared\CrudOperation.js:5:24)	Provided entity name "Nepal" has already been registered. Try with other options.. 	Error
+Mon, 01 Jul 2024 16:03:54 GMT	POST	/createCountry	localhost:3333	Error: Provided entity name "Nepal" has already been registered. Try with other options.. 
+    at C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\Master\Country.controller.js:21:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\shared\CrudOperation.js:5:24)	Provided entity name "Nepal" has already been registered. Try with other options.. 	Error
+Mon, 01 Jul 2024 16:08:58 GMT	PUT	/1	localhost:3333	Error: Please authorized first
+    at isAdmin (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\middleware\Auth.js:17:19)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at next (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at Route.dispatch (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\index.js:365:14)	Please authorized first	Error
+Mon, 01 Jul 2024 16:10:37 GMT	GET	/	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\shared\CrudOperation.js:18:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Mon, 01 Jul 2024 16:13:07 GMT	POST	/	localhost:3333	Error: The given field is required to be filled
+    at C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\user.controller.js:34:15
+    at CrudOperation.createEntity (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\shared\CrudOperation.js:5:30)
+    at createuser (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\controllers\user.controller.js:7:19)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Dell\Desktop\CIBT_Latest\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	The given field is required to be filled	Error
