@@ -1,30 +1,29 @@
-const { DataTypes, Model } = require("sequelize");
+// models/Loan.js
+const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
 
-class Loan extends Model {}
-
-Loan.init(
+const Loan = sequelize.define(
+  "Loan",
   {
-    borrower: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    amount: {
-      type: DataTypes.DECIMAL(10, 2),
+    principal: {
+      type: DataTypes.FLOAT,
       allowNull: false,
     },
     interestRate: {
-      type: DataTypes.DECIMAL(5, 2),
+      type: DataTypes.FLOAT,
       allowNull: false,
     },
-    duration: {
+    tenureMonths: {
       type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    monthlyEMI: {
+      type: DataTypes.FLOAT,
       allowNull: false,
     },
   },
   {
-    sequelize,
-    modelName: "Loan",
+    timestamps: true,
   }
 );
 

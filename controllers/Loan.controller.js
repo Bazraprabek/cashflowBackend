@@ -1,37 +1,49 @@
-const { Loan } = require("../models/LoanModel");
+// controllers/loanController.js
+const Loan = require("../models/LoanModel");
 const CrudOperation = require("../controllers/shared/CrudOperation");
 
-class LoanController {
-  createLoan(req, res) {
-    CrudOperation.createEntity(req, res, Loan, (data) => {
-      const nameValidation =
-        !!data.borrower &&
-        !!data.amount &&
-        !!data.interestRate &&
-        !!data.duration;
-      const dbValidation = true; // Add more validation logic if needed
-      return { nameValidation, dbValidation };
-    });
-  }
+// Validation callback function
+const validateLoan = (data) => {
+  const nameValidation =
+    data.principal && data.interestRate && data.tenureMonths;
+  const dbValidation = true; // Add more validations as necessary
+  return { nameValidation, dbValidation };
+};
 
-  getAllLoans(req, res) {
-    CrudOperation.getAllEntites(req, res, Loan);
-  }
+// Calculate EMI callback function
+const calculateEMIAndUpdate = (updatedValue, currentModel) => {
+  const { principal, interestRate, tenureMonths } = updatedValue;
+  const monthlyInterestRate = interestRate / (12 * 100);
+  const monthlyEMI =
+    (principal *
+      monthlyInterestRate *
+      Math.pow(1 + monthlyInterestRate, tenureMonths)) /
+    (Math.pow(1 + monthlyInterestRate, tenureMonths) - 1);
 
-  getLoanById(req, res) {
-    CrudOperation.getEntityById(req, res, Loan);
-  }
+  currentModel.principal = principal;
+  currentModel.interestRate = interestRate;
+  currentModel.tenureMonths = tenureMonths;
+  currentModel.monthlyEMI = monthlyEMI;
 
-  updateLoan(req, res) {
-    CrudOperation.updateEntity(req, res, Loan, (updatedValue, currentModel) => {
-      Object.assign(currentModel, updatedValue);
-      return currentModel;
-    });
-  }
+  return currentModel;
+};
 
-  deleteLoan(req, res) {
-    CrudOperation.deleteEntity(req, res, Loan);
-  }
-}
+exports.createLoan = (req, res) => {
+  CrudOperation.createEntity(req, res, Loan, validateLoan);
+};
 
-module.exports = new LoanController();
+exports.getAllLoans = (req, res) => {
+  CrudOperation.getAllEntities(req, res, Loan);
+};
+
+exports.getLoanById = (req, res) => {
+  CrudOperation.getEntityById(req, res, Loan);
+};
+
+exports.updateLoan = (req, res) => {
+  CrudOperation.updateEntity(req, res, Loan, calculateEMIAndUpdate);
+};
+
+exports.deleteLoan = (req, res) => {
+  CrudOperation.deleteEntity(req, res, Loan);
+};
