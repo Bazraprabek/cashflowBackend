@@ -103,8 +103,8 @@ class BankController {
     );
   }
 
-  static async deleteBank(req, res) {
-    CrudOperation.deleteEntity(req, res, BankModel);
+  static async deleteBank(req, res, next) {
+    CrudOperation.deleteEntity(req, res, next, BankModel);
   }
 }
 
