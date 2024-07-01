@@ -1,14 +1,17 @@
 const BankModel = require("../../models/finance/Bank");
 const { CrudOperation } = require("../shared/CrudOperation");
-const AppError = require("../../middleware/AppError");
+const {
+  entityAlreadyExistsError,
+  entityPropsMissingError,
+} = require("../../utils/Const");
 
 class BankController {
   static createBank(req, res, next) {
     CrudOperation.createEntity(
       req,
       res,
-      BankModel,
       next,
+      BankModel,
       async function (body) {
         let nameValidation = false;
         if (body) {
@@ -17,13 +20,13 @@ class BankController {
           });
           if (dbResult) {
             nameValidation = true;
-            return next(new AppError("Name has already been created", 404));
+            return entityAlreadyExistsError(next);
           } else {
             mainValidation = true;
             return nameValidation;
           }
         } else {
-          return next(new AppError("Please provide the required field", 404));
+          return entityPropsMissingError(next);
         }
       }
     );

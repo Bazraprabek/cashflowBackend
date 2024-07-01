@@ -1,5 +1,7 @@
 const User = require("../models/User");
-const { verifyToken } = require("../utils/jwt");
+const { unAuthorizedError, noTokenError } = require("../utils/Const");
+const { verifyToken, verifyTokens } = require("../utils/jwt");
+const jwt = require("jsonwebtoken");
 const AppError = require("./AppError");
 
 class Auth {
@@ -7,13 +9,15 @@ class Auth {
     const token = req.headers.authorization;
     if (token) {
       let userToken = token.split(" ")[1];
-      const decode = verifyToken(userToken);
-      if (decode.role === "admin") next();
-      else {
-        return next(new AppError("You are not authorized"), 400);
+      const decode = verifyTokens(userToken, req, next);
+      console.log("admin decode done");
+      if (decode.role === "admin") {
+        next();
+      } else {
+        unAuthorizedError(next);
       }
     } else {
-      return next(new AppError("Please authorized first", 404));
+      noTokenError(next);
     }
   }
 
@@ -21,31 +25,12 @@ class Auth {
     const token = req.headers.authorization;
     if (token) {
       let userToken = token.split(" ")[1];
-      try {
-        const decode = verifyToken(userToken);
-        console.log(decode);
-
-        const findUser = await User.findOne({
-          where: { username: decode.username },
-        });
-
-        if (findUser) {
-          req.userId = decode.id;
-          next();
-        } else {
-          return next(new AppError("Please sign in to your account.", 400));
-        }
-      } catch (error) {
-        if (error.name === "TokenExpiredError") {
-          return next(
-            new AppError("Your session has expired. Please sign in again.", 401)
-          );
-        } else {
-          return next(new AppError("You are not authorized", 401));
-        }
-      }
+      const decode = verifyTokens(userToken, req, next);
+      console.log(decode);
+      next();
     } else {
-      return next(new AppError("Please authorize first", 404));
+      console.log("no token");
+      return noTokenError(next);
     }
   }
 }
