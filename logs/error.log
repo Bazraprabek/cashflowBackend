@@ -2627,3 +2627,76 @@ Mon, 01 Jul 2024 06:07:06 GMT	GET	/getAllBank	localhost:3333	Error: Invalid toke
     at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
     at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
     at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Mon, 01 Jul 2024 13:53:31 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:66:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Mon, 01 Jul 2024 13:54:19 GMT	GET	/getAllBank	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:171:14
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Mon, 01 Jul 2024 13:54:28 GMT	GET	/getAllBank	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:30:14)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Mon, 01 Jul 2024 14:01:24 GMT	POST	/createInvestment	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Investment.controller.js:22:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Mon, 01 Jul 2024 14:01:33 GMT	POST	/createInvestment	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Investment.controller.js:22:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Mon, 01 Jul 2024 14:06:28 GMT	POST	/createInvestment	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:30:14)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Mon, 01 Jul 2024 14:15:29 GMT	POST	/createInvestment	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:171:14
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Mon, 01 Jul 2024 14:27:01 GMT	GET	/1	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:171:14
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error

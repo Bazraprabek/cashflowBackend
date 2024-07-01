@@ -29,6 +29,10 @@ class Logger {
   }
 
   static errorLogger(err, req, res, next) {
+    const statusCode = err.statusCode || 500;
+    const status = err.status || "error";
+    const message = err.message || "Something went wrong!";
+    console.log("Global error handler");
     new Logger().logEvents(
       `${req.method}\t${req.url}\t${req.headers.host}\t${err.stack}\t${err.message}\t${err.name}`,
       "error.log"

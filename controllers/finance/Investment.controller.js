@@ -4,30 +4,35 @@ const {
   entityPropsMissingError,
   entityAlreadyExistsError,
 } = require("../../utils/Const");
+const AppError = require("../../middleware/AppError");
 
 class Investment {
   static createInvestment(req, res, next) {
-    CrudOperation.createEntity(
-      req,
-      res,
-      next,
-      investmentModel,
-      async function (data) {
-        const { name } = data;
-        if (name) {
-          const dbResult = await investmentModel.findOne({
-            where: { name: name },
-          });
-          if (dbResult) {
-            return entityAlreadyExistsError(next);
+    try {
+      CrudOperation.createEntity(
+        req,
+        res,
+        next,
+        investmentModel,
+        async function (data) {
+          const { name } = data;
+          if (name) {
+            const dbResult = await investmentModel.findOne({
+              where: { name: name },
+            });
+            if (dbResult) {
+              return entityAlreadyExistsError(next);
+            } else {
+              return true;
+            }
           } else {
-            return true;
+            return entityPropsMissingError(next);
           }
-        } else {
-          return entityPropsMissingError(next);
         }
-      }
-    );
+      );
+    } catch (error) {
+      return next(new AppError("Something went wrong"), 500);
+    }
   }
 
   static async getAllInvestment(req, res, next) {

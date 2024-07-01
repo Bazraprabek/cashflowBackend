@@ -22,7 +22,6 @@ Investment.init(
     type: {
       type: DataTypes.STRING,
       allowNull: true,
-      unique: true,
     },
     tax: {
       type: DataTypes.DOUBLE,
