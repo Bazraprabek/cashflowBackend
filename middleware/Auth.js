@@ -1,8 +1,5 @@
-const User = require("../models/User");
 const { unAuthorizedError, noTokenError } = require("../utils/Const");
-const { verifyToken, verifyTokens } = require("../utils/jwt");
-const jwt = require("jsonwebtoken");
-const AppError = require("./AppError");
+const { verifyTokens } = require("../utils/jwt");
 
 class Auth {
   static isAdmin(req, res, next) {

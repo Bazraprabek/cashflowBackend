@@ -40,6 +40,24 @@ class Const {
       next
     );
   };
+
+  static searchForEntityData = async (next, func) => {
+    const entities = entityName;
+    console.log(entities);
+    const dataResult = await model.findOne({
+      where: {
+        entities: entityData,
+      },
+    });
+    if (dataResult) {
+      console.log("Match Found");
+      return this.entityAlreadyExistsError(next);
+    }
+    if (!dataResult) {
+      console.log("No data were present");
+      return true;
+    }
+  };
 }
 
 module.exports = Const;

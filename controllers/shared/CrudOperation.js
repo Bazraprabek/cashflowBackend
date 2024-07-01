@@ -4,9 +4,9 @@ const { searchEntityMissingError } = require("../../utils/Const");
 class CrudOperation {
   static async createEntity(req, res, next, model, cb) {
     const validation = await cb(req.body);
-    console.log(validation);
     if (validation) {
       const createdModel = await model.create(req.body);
+      console.log("check", createdModel);
       res.status(201).json(createdModel);
     }
   }
@@ -51,10 +51,12 @@ class CrudOperation {
     const { id } = req.params;
     const updatedValue = req.body;
     let currentModel = await model.findByPk(id);
+    console.log(currentModel);
     if (!currentModel) {
       searchEntityMissingError(next);
     }
     const updatedModel = cb(updatedValue, currentModel);
+    console.log(updatedModel);
     await updatedModel.save();
     res.json(updatedModel);
   }

@@ -43,12 +43,28 @@ class Logger {
 }
 
 const developmentError = (err, req, res) => {
+  console.log(res.name);
   console.log("Devs Error  :::  ");
   const statusCode = err.statusCode || 500;
   const status = err.status || "error";
   const message = err.message || "Something went wrong!";
 
-  res.status(statusCode).json({
+  if (err.name === "SequelizeValidationError") {
+    statusCode = 400;
+    message = err.errors[0].message;
+  }
+
+  if (err.name === "SequelizeUniqueConstraintError") {
+    statusCode = 400;
+    message = err.errors[0].message;
+  }
+
+  if (err.name === "SequelizeDatabaseError") {
+    statusCode = 400;
+    message = err.errors[0].message;
+  }
+
+  return res.status(statusCode).json({
     status: status,
     message: message,
     stack: err.stack,
@@ -61,7 +77,7 @@ const productionError = (err, res) => {
   const statusCode = err.statusCode || 500;
   const status = err.status || "error";
   const message = err.message || "Something went wrong!";
-  res.status(statusCode).json({
+  return res.status(statusCode).json({
     status: status,
     message: message,
   });

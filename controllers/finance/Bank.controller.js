@@ -3,6 +3,7 @@ const { CrudOperation } = require("../shared/CrudOperation");
 const {
   entityAlreadyExistsError,
   entityPropsMissingError,
+  searchForEntityData,
 } = require("../../utils/Const");
 
 class BankController {
@@ -14,16 +15,55 @@ class BankController {
       BankModel,
       async function (body) {
         let nameValidation = false;
-        if (body) {
-          const dbResult = await BankModel.findOne({
-            where: { bankName: body.bankName },
+
+        if (body.bankName) {
+          // const dbResult = await BankModel.findOne({
+          //   where: { bankName: body.bankName },
+          // });
+          // if (dbResult) {
+          //   if (!body.swiftcode) {
+          //     return entityPropsMissingError(next);
+          //   }
+          //   if (body.swiftcode) {
+          //     const uniqueCheck = await BankModel.findOne({
+          //       where: { swiftcode: body.swiftcode },
+          //     });
+          //     if (uniqueCheck) {
+          //       console.log("Match Found");
+          //     }
+          //   }
+          //   nameValidation = true;
+          //   return entityAlreadyExistsError(next);
+
+          // } else {
+          //   nameValidation = true;
+          //   return nameValidation;
+          // }
+          const dataResult = await BankModel.findOne({
+            where: {
+              bankName: body.bankName,
+            },
           });
-          if (dbResult) {
-            nameValidation = true;
+          if (!dataResult) {
+            if (body.swiftcode) {
+              const uniqueResult = await BankModel.findOne({
+                where: {
+                  swiftcode: body.swiftcode,
+                },
+              });
+              if (uniqueResult) {
+                return entityAlreadyExistsError(next);
+              }
+              if (!uniqueResult) {
+                console.log("return true");
+                return true;
+              }
+            } else {
+              return entityPropsMissingError(next);
+            }
+          }
+          if (dataResult) {
             return entityAlreadyExistsError(next);
-          } else {
-            mainValidation = true;
-            return nameValidation;
           }
         } else {
           return entityPropsMissingError(next);

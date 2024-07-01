@@ -2410,3 +2410,220 @@ Sun, 30 Jun 2024 06:25:05 GMT	POST	/createWallet	localhost:3333	Error: Given ent
     at D:\React\CBIT\cashflowBackend\controllers\finance\Wallet.controller.js:22:13
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Sun, 30 Jun 2024 13:35:05 GMT	GET	/getAllBank	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:33:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Sun, 30 Jun 2024 13:35:23 GMT	GET	/getAllBank	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:33:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Sun, 30 Jun 2024 13:36:18 GMT	GET	/getAllBank	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:33:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Sun, 30 Jun 2024 13:40:07 GMT	GET	/getAllBank	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:33:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Sun, 30 Jun 2024 13:40:14 GMT	POST	/createBank	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:17:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Sun, 30 Jun 2024 14:22:21 GMT	POST	/createBank	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:190:16
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:9:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Sun, 30 Jun 2024 14:22:45 GMT	POST	/createBank	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:9:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
+Sun, 30 Jun 2024 14:22:47 GMT	POST	/createBank	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:9:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
+Sun, 30 Jun 2024 14:22:54 GMT	POST	/createBank	localhost:3333	TypeError: Cannot read properties of undefined (reading 'catch')
+    at D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:23
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:12:9)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Cannot read properties of undefined (reading 'catch')	TypeError
+Sun, 30 Jun 2024 14:24:10 GMT	POST	/createBank	localhost:3333	TypeError: Cannot read properties of undefined (reading 'catch')
+    at D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:23
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:12:9)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Cannot read properties of undefined (reading 'catch')	TypeError
+Sun, 30 Jun 2024 14:24:41 GMT	POST	/createBank	localhost:3333	TypeError: Cannot read properties of undefined (reading 'catch')
+    at D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:23
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:12:9)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Cannot read properties of undefined (reading 'catch')	TypeError
+Sun, 30 Jun 2024 14:26:16 GMT	POST	/createBank	localhost:3333	TypeError: Cannot read properties of undefined (reading 'catch')
+    at D:\React\CBIT\cashflowBackend\middleware\CatchAsync.js:3:23
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:12:9)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Cannot read properties of undefined (reading 'catch')	TypeError
+Sun, 30 Jun 2024 14:27:22 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:24:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Sun, 30 Jun 2024 14:29:18 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:24:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Sun, 30 Jun 2024 14:29:19 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:24:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Sun, 30 Jun 2024 14:29:19 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:24:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Sun, 30 Jun 2024 14:30:18 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:24:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Sun, 30 Jun 2024 14:33:39 GMT	POST	/createBank	localhost:3333	Error: Please fill the required fields !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityPropsMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:33:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:30:18
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:30)
+    at createBank (D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:10:19)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:12:9)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)	Please fill the required fields !!!	Error
+Sun, 30 Jun 2024 14:37:49 GMT	POST	/createBank	localhost:3333	Error: Please fill the required fields !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityPropsMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:33:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:30:18
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:30)
+    at createBank (D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:10:19)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:12:9)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)	Please fill the required fields !!!	Error
+Sun, 30 Jun 2024 14:37:51 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:24:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Mon, 01 Jul 2024 03:25:26 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:24:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Mon, 01 Jul 2024 03:29:28 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:28:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Mon, 01 Jul 2024 03:30:19 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:28:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Mon, 01 Jul 2024 03:31:07 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:30:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Mon, 01 Jul 2024 05:18:08 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:64:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Mon, 01 Jul 2024 05:18:25 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:55:24
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Mon, 01 Jul 2024 05:19:15 GMT	POST	/createBank	localhost:3333	Error: Please fill the required fields !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityPropsMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:33:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:62:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Please fill the required fields !!!	Error
+Mon, 01 Jul 2024 05:19:51 GMT	POST	/createBank	localhost:3333	Error: Please fill the required fields !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityPropsMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:33:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:62:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Please fill the required fields !!!	Error
+Mon, 01 Jul 2024 06:07:06 GMT	GET	/getAllBank	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:171:14
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
