@@ -7,6 +7,7 @@ const cors = require("cors");
 const { logger, errorLogger } = require("./middleware/Logger");
 const { startServer } = require("./config/ServerStarter");
 const ApiRoutes = require("./config/ApiRoutes");
+require("./controllers/shared/ScheduleTask"); // Import the scheduler
 const app = express();
 
 // app.use(logger);

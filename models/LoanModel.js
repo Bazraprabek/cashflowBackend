@@ -21,6 +21,14 @@ const Loan = sequelize.define(
       type: DataTypes.FLOAT,
       allowNull: false,
     },
+    emiAmount: {
+      type: DataTypes.FLOAT,
+      allowNull: false,
+    },
+    nextPaymentDate: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
   },
   {
     timestamps: true,
