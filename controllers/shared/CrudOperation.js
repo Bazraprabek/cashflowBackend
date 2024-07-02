@@ -63,16 +63,18 @@ class CrudOperation {
         return next(new AppError("Entity not found", 404));
       }
 
-      const updatedModel = await cb(updatedValue, currentModel);
+      const updatedModel = await await cb(updatedValue, currentModel);
 
       if (updatedModel) {
-        await updatedModel.save();
-        res.json(updatedModel);
+        if (updatedModel) {
+      await updatedModel.save();
+          res.json(updatedModel);
       } else {
         return next(new AppError("Failed to update entity", 400));
       }
     } catch (error) {
       return next(error);
+    }
     }
   }
 

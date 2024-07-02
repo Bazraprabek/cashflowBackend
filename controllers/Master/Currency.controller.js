@@ -1,5 +1,10 @@
 const AppError = require("../../middleware/AppError");
+const Country = require("../../models/Master/Country");
 const CurrencyModel = require("../../models/Master/Currency");
+const {
+  entityPropsMissingError,
+  searchEntityMissingError,
+} = require("../../utils/Const");
 const { CrudOperation } = require("../shared/CrudOperation");
 
 class CurrencyController {
@@ -11,7 +16,6 @@ class CurrencyController {
       CurrencyModel,
 
       async function (body) {
-        let mainValidation = false;
         if (body.currencyName) {
           const dbResult = await CurrencyModel.findOne({
             where: { currencyName: body.currencyName },
@@ -24,9 +28,21 @@ class CurrencyController {
               )
             );
           } else {
-            console.log("Result not found");
-            mainValidation = true;
-            return mainValidation;
+            console.log(body);
+
+            const keyExists = await Country.findOne({
+              where: {
+                id: body.countryId,
+              },
+            });
+            console.log("keyExists", keyExists);
+            if (keyExists) {
+              console.log("Found");
+              return true;
+            } else {
+              console.log("not found");
+              return entityPropsMissingError(next);
+            }
           }
         } else {
           console.log("root");
@@ -50,11 +66,27 @@ class CurrencyController {
       res,
       next,
       CurrencyModel,
-      function (updatedValue, currentModel) {
-        currentModel.currencyName = updatedValue.currencyName;
-        currentModel.currencyCode = updatedValue.currencyCode;
-        currentModel.countryId = updatedValue.countryId;
-        return currentModel;
+      async function (updatedValue, currentModel) {
+        if (updatedValue) {
+          if (updatedValue.countryId) {
+            const countryExits = await Country.findOne({
+              where: {
+                id: updatedValue.countryId,
+              },
+            });
+            console.log(countryExits);
+            if (countryExits) {
+              currentModel.currencyName = updatedValue.currencyName;
+              currentModel.currencyCode = updatedValue.currencyCode;
+              currentModel.countryId = updatedValue.countryId;
+              return currentModel;
+            } else {
+              return searchEntityMissingError(next);
+            }
+          }
+        } else {
+          return entityPropsMissingError(next);
+        }
       }
     );
   }

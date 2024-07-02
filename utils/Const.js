@@ -41,6 +41,14 @@ class Const {
     );
   };
 
+  static foriegnKeyUsed = (next) => {
+    return throwError(
+      "Current id is being used as connecting key with other table. So, try altering that first.",
+      400,
+      next
+    );
+  };
+
   static searchForEntityData = async (next, func) => {
     const entities = entityName;
     console.log(entities);
