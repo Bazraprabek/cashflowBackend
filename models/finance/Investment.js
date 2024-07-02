@@ -9,7 +9,9 @@ Investment.init(
     name: {
       type: DataTypes.STRING,
       allowNull: true,
-      unique: true,
+      unique: {
+        msg: "Entity has already been registered. Try again with new one!!!",
+      },
     },
     interest: {
       type: DataTypes.DOUBLE,
@@ -21,7 +23,7 @@ Investment.init(
     },
     type: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     tax: {
       type: DataTypes.DOUBLE,
