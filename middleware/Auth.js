@@ -30,6 +30,22 @@ class Auth {
       return noTokenError(next);
     }
   }
+
+  static async isAuthorized(req, res, next) {
+    const token = req.headers.authorization;
+    if (token) {
+      let userToken = token.split(" ")[1];
+      const decode = verifyTokens(userToken, req, next);
+      console.log(decode);
+      if (decode) {
+        next();
+      } else {
+        return unAuthorizedError(next);
+      }
+    } else {
+      return noTokenError(next);
+    }
+  }
 }
 
 module.exports = Auth;
