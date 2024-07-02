@@ -1,12 +1,17 @@
 const AppError = require("../../middleware/AppError");
 const Finance = require("../../models/Finance");
 const Transaction = require("../../models/Transaction");
+const User = require("../../models/User");
 const { CrudOperation } = require("../shared/CrudOperation");
 const { Sequelize } = require("sequelize");
 
 class transactionController {
   static async index(req, res, next) {
     CrudOperation.getAllEntites(req, res, next, Transaction, true);
+  }
+
+  static async getAllEntites(req, res, next) {
+    CrudOperation.getAllEntites(req, res, next, Transaction, false);
   }
 
   static async getTransactionById(req, res, next) {
@@ -171,12 +176,23 @@ class transactionController {
       res,
       next,
       Transaction,
-      function (updatedValue, currentModel) {
-        currentModel.status = updatedValue.status;
-        currentModel.type = updatedValue.type;
-        currentModel.amount = updatedValue.amount;
-        currentModel.remarks = updatedValue.remarks;
-        return currentModel;
+      async function (updatedValue, currentModel) {
+        try {
+          console.log(currentModel.userId, req.userId);
+          const user = currentModel.userId === req.userId;
+
+          if (!user) {
+            return next(new AppError("Unauthorized User", 401));
+          } else {
+            currentModel.type = updatedValue.type;
+            currentModel.cashType = updatedValue.cashType;
+            currentModel.amount = updatedValue.amount;
+            currentModel.remarks = updatedValue.remarks;
+            return currentModel;
+          }
+        } catch (error) {
+          return next(error);
+        }
       }
     );
   }
