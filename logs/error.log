@@ -2887,3 +2887,48 @@ Tue, 02 Jul 2024 09:55:12 GMT	DELETE	/3	localhost:3333	Error: There were no reco
 Tue, 02 Jul 2024 09:55:19 GMT	GET	/getAllCurrencies	localhost:3333	Error: Data was not found
     at CrudOperation.getAllEntites (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:39:21)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 02 Jul 2024 10:14:43 GMT	POST	/createCurrency	localhost:3333	Error: Please fill the required fields !!!
+    at throwError (/home/englishcha/Documents/CIBT/cashflow-backend/utils/Const.js:4:15)
+    at entityPropsMissingError (/home/englishcha/Documents/CIBT/cashflow-backend/utils/Const.js:33:12)
+    at /home/englishcha/Documents/CIBT/cashflow-backend/controllers/Master/Currency.controller.js:44:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (/home/englishcha/Documents/CIBT/cashflow-backend/controllers/shared/CrudOperation.js:6:24)	Please fill the required fields !!!	Error
+Tue, 02 Jul 2024 10:15:37 GMT	PUT	/4	localhost:3333	Error: Entity not found
+    at CrudOperation.updateEntity (/home/englishcha/Documents/CIBT/cashflow-backend/controllers/shared/CrudOperation.js:62:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Entity not found	Error
+Tue, 02 Jul 2024 10:15:44 GMT	PUT	/4	localhost:3333	Error: Entity not found
+    at CrudOperation.updateEntity (/home/englishcha/Documents/CIBT/cashflow-backend/controllers/shared/CrudOperation.js:62:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Entity not found	Error
+Tue, 02 Jul 2024 10:16:06 GMT	PUT	/9	localhost:3333	Error: There were no records present that matches the field you provided !!!
+    at throwError (/home/englishcha/Documents/CIBT/cashflow-backend/utils/Const.js:4:15)
+    at searchEntityMissingError (/home/englishcha/Documents/CIBT/cashflow-backend/utils/Const.js:37:12)
+    at /home/englishcha/Documents/CIBT/cashflow-backend/controllers/Master/Currency.controller.js:84:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.updateEntity (/home/englishcha/Documents/CIBT/cashflow-backend/controllers/shared/CrudOperation.js:65:32)	There were no records present that matches the field you provided !!!	Error
+Tue, 02 Jul 2024 10:16:18 GMT	PUT	/9	localhost:3333	Error: There were no records present that matches the field you provided !!!
+    at throwError (/home/englishcha/Documents/CIBT/cashflow-backend/utils/Const.js:4:15)
+    at searchEntityMissingError (/home/englishcha/Documents/CIBT/cashflow-backend/utils/Const.js:37:12)
+    at /home/englishcha/Documents/CIBT/cashflow-backend/controllers/Master/Currency.controller.js:84:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.updateEntity (/home/englishcha/Documents/CIBT/cashflow-backend/controllers/shared/CrudOperation.js:65:32)	There were no records present that matches the field you provided !!!	Error
+Tue, 02 Jul 2024 10:54:41 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (/home/englishcha/Documents/CIBT/cashflow-backend/utils/Const.js:4:15)
+    at entityAlreadyExistsError (/home/englishcha/Documents/CIBT/cashflow-backend/utils/Const.js:25:12)
+    at /home/englishcha/Documents/CIBT/cashflow-backend/controllers/finance/Bank.controller.js:66:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (/home/englishcha/Documents/CIBT/cashflow-backend/controllers/shared/CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Tue, 02 Jul 2024 11:01:31 GMT	POST	/createCountry	localhost:3333	Error: Provided entity name "Nepal" has already been registered. Try with other options.. 
+    at /home/englishcha/Documents/CIBT/cashflow-backend/controllers/Master/Country.controller.js:23:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (/home/englishcha/Documents/CIBT/cashflow-backend/controllers/shared/CrudOperation.js:6:24)	Provided entity name "Nepal" has already been registered. Try with other options.. 	Error
+Tue, 02 Jul 2024 11:03:49 GMT	GET	/getAllInvestment	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (/home/englishcha/Documents/CIBT/cashflow-backend/controllers/shared/CrudOperation.js:39:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllInvestment (/home/englishcha/Documents/CIBT/cashflow-backend/controllers/finance/Investment.controller.js:39:5)
+    at async /home/englishcha/Documents/CIBT/cashflow-backend/routes/investment.route.js:19:5	Data was not found	Error
+Tue, 02 Jul 2024 11:04:39 GMT	PUT	/1	localhost:3333	Error: Entity not found
+    at CrudOperation.updateEntity (/home/englishcha/Documents/CIBT/cashflow-backend/controllers/shared/CrudOperation.js:62:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Entity not found	Error
+Tue, 02 Jul 2024 11:06:03 GMT	PUT	/10	localhost:3333	Error: Entity not found
+    at CrudOperation.updateEntity (/home/englishcha/Documents/CIBT/cashflow-backend/controllers/shared/CrudOperation.js:62:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Entity not found	Error

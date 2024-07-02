@@ -54,27 +54,23 @@ class CrudOperation {
   }
 
   static async updateEntity(req, res, next, model, cb) {
-    try {
-      const { id } = req.params;
-      const updatedValue = req.body;
-      let currentModel = await model.findByPk(id);
+    const { id } = req.params;
+    const updatedValue = req.body;
+    let currentModel = await model.findByPk(id);
 
-      if (!currentModel) {
-        return next(new AppError("Entity not found", 404));
-      }
+    if (!currentModel) {
+      return next(new AppError("Entity not found", 404));
+    }
 
-      const updatedModel = await await cb(updatedValue, currentModel);
+    const updatedModel = await await cb(updatedValue, currentModel);
 
+    if (updatedModel) {
       if (updatedModel) {
-        if (updatedModel) {
-      await updatedModel.save();
-          res.json(updatedModel);
+        await updatedModel.save();
+        res.json(updatedModel);
       } else {
         return next(new AppError("Failed to update entity", 400));
       }
-    } catch (error) {
-      return next(error);
-    }
     }
   }
 
