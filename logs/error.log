@@ -2700,3 +2700,141 @@ Mon, 01 Jul 2024 14:27:01 GMT	GET	/1	localhost:3333	Error: Invalid token. Please
     at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
     at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
     at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Mon, 01 Jul 2024 15:09:59 GMT	GET	/getAllCountries	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:39:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Mon, 01 Jul 2024 15:53:43 GMT	GET	/getAllBank	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:30:14)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Mon, 01 Jul 2024 15:54:06 GMT	GET	/getAllBank	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:171:14
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Mon, 01 Jul 2024 15:54:34 GMT	GET	/1	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:30:14)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)	Please signin with your registered account!!!	Error
+Tue, 02 Jul 2024 03:46:28 GMT	POST	/createBank	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:17:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Tue, 02 Jul 2024 03:46:57 GMT	POST	/createBank	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at D:\React\CBIT\cashflowBackend\controllers\finance\Bank.controller.js:55:24
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:6:24)	Given entity has already been registered, try with new one !!!	Error
+Tue, 02 Jul 2024 03:48:20 GMT	PUT	/7	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:17:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)	Please signin with your registered account!!!	Error
+Tue, 02 Jul 2024 03:48:44 GMT	DELETE	/5	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:17:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15	Please signin with your registered account!!!	Error
+Tue, 02 Jul 2024 03:51:36 GMT	DELETE	/5	localhost:3333	Error: There were no records present that matches the field you provided !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at searchEntityMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:37:12)
+    at CrudOperation.deleteEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:76:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	There were no records present that matches the field you provided !!!	Error
+Tue, 02 Jul 2024 03:51:41 GMT	DELETE	/5	localhost:3333	Error: There were no records present that matches the field you provided !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at searchEntityMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:37:12)
+    at CrudOperation.deleteEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:76:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	There were no records present that matches the field you provided !!!	Error
+Tue, 02 Jul 2024 03:52:28 GMT	GET	/createWallet	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:30:14)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)	Please signin with your registered account!!!	Error
+Tue, 02 Jul 2024 03:53:17 GMT	GET	/1	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:30:14)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:376:14)	Please signin with your registered account!!!	Error
+Tue, 02 Jul 2024 03:56:32 GMT	DELETE	/5	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isAdmin (D:\React\CBIT\cashflowBackend\middleware\Auth.js:17:7)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15	Please signin with your registered account!!!	Error
+Tue, 02 Jul 2024 03:58:34 GMT	GET	/5	localhost:3333	Error: There were no records present that matches the field you provided !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at searchEntityMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:37:12)
+    at CrudOperation.getEntityById (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:51:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	There were no records present that matches the field you provided !!!	Error
+Tue, 02 Jul 2024 03:58:47 GMT	PUT	/5	localhost:3333	Error: There were no records present that matches the field you provided !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at searchEntityMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:37:12)
+    at CrudOperation.updateEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:62:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	There were no records present that matches the field you provided !!!	Error
+Tue, 02 Jul 2024 03:58:54 GMT	DELETE	/5	localhost:3333	Error: There were no records present that matches the field you provided !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at searchEntityMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:37:12)
+    at CrudOperation.deleteEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:76:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	There were no records present that matches the field you provided !!!	Error
+Tue, 02 Jul 2024 03:58:58 GMT	GET	/5	localhost:3333	Error: There were no records present that matches the field you provided !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at searchEntityMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:37:12)
+    at CrudOperation.getEntityById (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:51:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	There were no records present that matches the field you provided !!!	Error

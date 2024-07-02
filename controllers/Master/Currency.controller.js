@@ -1,6 +1,6 @@
 const AppError = require("../../middleware/AppError");
 const CurrencyModel = require("../../models/Master/Currency");
-const CrudOperation = require("../shared/CrudOperation");
+const { CrudOperation } = require("../shared/CrudOperation");
 
 class CurrencyController {
   static async createCurrency(req, res, next) {
@@ -9,12 +9,12 @@ class CurrencyController {
       res,
       next,
       CurrencyModel,
-      
+
       async function (body) {
         let mainValidation = false;
         if (body.currencyName) {
           const dbResult = await CurrencyModel.findOne({
-            where: {currencyName: body.currencyName },
+            where: { currencyName: body.currencyName },
           });
           if (dbResult) {
             return next(
@@ -47,7 +47,7 @@ class CurrencyController {
   static async updateCurrency(req, res, next) {
     CrudOperation.updateEntity(
       req,
-      res, 
+      res,
       next,
       CurrencyModel,
       function (updatedValue, currentModel) {

@@ -48,9 +48,9 @@ class CrudOperation {
     let entityResult = await model.findByPk(id);
     console.log(entityResult);
     if (!entityResult) {
-      searchEntityMissingError(next);
+      return searchEntityMissingError(next);
     }
-    res.json(entityResult);
+    if (entityResult) res.json(entityResult);
   }
 
   static async updateEntity(req, res, next, model, cb) {
@@ -59,7 +59,7 @@ class CrudOperation {
     let currentModel = await model.findByPk(id);
     console.log(currentModel);
     if (!currentModel) {
-      searchEntityMissingError(next);
+      return searchEntityMissingError(next);
     }
     const updatedModel = cb(updatedValue, currentModel);
     console.log(updatedModel);
@@ -73,10 +73,12 @@ class CrudOperation {
     let entityResult = await model.findByPk(id);
     console.log(entityResult);
     if (!entityResult) {
-      searchEntityMissingError(next);
+      return searchEntityMissingError(next);
     }
-    await entityResult.destroy();
-    res.status(200).json({ id: id, msg: "Deleted Successfully" });
+    if (entityResult) {
+      await entityResult.destroy();
+      res.status(200).json({ id: id, msg: "Deleted Successfully" });
+    }
   }
 }
 
