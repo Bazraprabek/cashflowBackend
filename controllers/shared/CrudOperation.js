@@ -61,10 +61,12 @@ class CrudOperation {
     if (!currentModel) {
       return searchEntityMissingError(next);
     }
-    const updatedModel = cb(updatedValue, currentModel);
+    const updatedModel = await cb(updatedValue, currentModel);
     console.log(updatedModel);
-    await updatedModel.save();
-    res.json(updatedModel);
+    if (updatedModel) {
+      await updatedModel.save();
+      res.json(updatedModel);
+    }
   }
 
   static async deleteEntity(req, res, next, model) {

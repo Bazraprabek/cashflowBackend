@@ -1,6 +1,8 @@
 const AppError = require("../../middleware/AppError");
 const CountryModel = require("../../models/Master/Country");
-const {CrudOperation} = require("../shared/CrudOperation");
+const Currency = require("../../models/Master/Currency");
+const { foriegnKeyUsed } = require("../../utils/Const");
+const { CrudOperation } = require("../shared/CrudOperation");
 
 class CountryController {
   static async createCountry(req, res, next) {
@@ -9,12 +11,12 @@ class CountryController {
       res,
       next,
       CountryModel,
-      
+
       async function (body) {
         let mainValidation = false;
         if (body.countryName) {
           const dbResult = await CountryModel.findOne({
-            where: {countryName: body.countryName },
+            where: { countryName: body.countryName },
           });
           if (dbResult) {
             return next(
@@ -37,6 +39,7 @@ class CountryController {
   }
 
   static async getAllCountries(req, res, next) {
+    console.log("called");
     CrudOperation.getAllEntites(req, res, next, CountryModel);
   }
 
@@ -47,7 +50,8 @@ class CountryController {
   static async updateCountry(req, res, next) {
     CrudOperation.updateEntity(
       req,
-      res, next,
+      res,
+      next,
       CountryModel,
       function (updatedValue, currentModel) {
         currentModel.countryName = updatedValue.countryName;
