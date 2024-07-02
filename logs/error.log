@@ -2753,3 +2753,19 @@ Tue, 02 Jul 2024 04:05:22 GMT	GET	/1	localhost:3333	Error: Please signin with yo
     at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
     at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
     at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)	Please signin with your registered account!!!	Error
+Tue, 02 Jul 2024 04:10:39 GMT	DELETE	/4	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:30:14)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15	Please signin with your registered account!!!	Error
+Tue, 02 Jul 2024 04:10:46 GMT	DELETE	/4	localhost:3333	Error: There were no records present that matches the field you provided !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at searchEntityMissingError (D:\React\CBIT\cashflowBackend\utils\Const.js:37:12)
+    at CrudOperation.deleteEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:76:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	There were no records present that matches the field you provided !!!	Error

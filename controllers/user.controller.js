@@ -51,7 +51,11 @@ class UserController {
       next,
       userModel,
       function (updatedValue, currentModel) {
-        currentModel.name = updatedValue.name;
+        currentModel.username = updatedValue.username;
+        currentModel.contact = updatedValue.contact;
+        currentModel.email = updatedValue.email;
+        currentModel.address = updatedValue.address;
+        currentModel.role = updatedValue.role;
         return currentModel;
       }
     );
