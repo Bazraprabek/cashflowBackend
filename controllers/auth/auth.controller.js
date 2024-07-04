@@ -55,6 +55,36 @@ class AuthController {
       return res.status(500).json({ message: "Internal server error." });
     }
   }
+
+  async signup(req, res) {
+    const { username, email, contact, password, address } = req.body;
+
+    if (!username || !email || !contact || !password || !address) {
+      return res.status(400).json({ message: "All fields are required." });
+    }
+
+    try {
+      const existingUser = await User.findOne({ where: { email } });
+
+      if (existingUser) {
+        return res.status(409).json({ message: "Email is already in use." });
+      }
+
+      const newUser = await User.create({
+        username,
+        email,
+        contact,
+        password,
+        role: "user",
+        address,
+      });
+
+      return res.status(201).json(newUser);
+    } catch (error) {
+      console.error("Error during signup:", error);
+      return res.status(500).json({ message: "Internal server error." });
+    }
+  }
 }
 
 module.exports = new AuthController();

@@ -1,6 +1,8 @@
 const AppError = require("../../middleware/AppError");
 const Finance = require("../../models/Finance");
 const Transaction = require("../../models/Transaction");
+const User = require("../../models/User");
+const { validateTransaction } = require("../../utils/validation");
 const { CrudOperation } = require("../shared/CrudOperation");
 const { Sequelize } = require("sequelize");
 
@@ -9,8 +11,76 @@ class transactionController {
     CrudOperation.getAllEntites(req, res, next, Transaction, true);
   }
 
+  static async getAllEntites(req, res, next) {
+    CrudOperation.getAllEntites(req, res, next, Transaction, false);
+  }
+
   static async getTransactionById(req, res, next) {
     CrudOperation.getEntityById(req, res, next, Transaction);
+  }
+
+  static async createTransaction(req, res, next) {
+    try {
+      await CrudOperation.createEntity(
+        req,
+        res,
+        next,
+        Transaction,
+        async (body) => {
+          const validatedData = await validateTransaction(req, next, body);
+          if (validatedData) {
+            req.body = {
+              ...validatedData,
+              userId: req.userId,
+            };
+            return { mainValidation: true };
+          }
+        }
+      );
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  static async updateTransaction(req, res, next) {
+    CrudOperation.updateEntity(
+      req,
+      res,
+      next,
+      Transaction,
+      async function (updatedValue, currentModel) {
+        try {
+          console.log(currentModel.userId, req.userId);
+          const user = currentModel.userId === req.userId;
+
+          if (!user) {
+            return next(new AppError("Unauthorized User", 401));
+          }
+
+          const validatedData = await validateTransaction(
+            req,
+            next,
+            updatedValue
+          );
+          if (validatedData) {
+            currentModel.type = validatedData.type;
+            currentModel.cashType = validatedData.cashType;
+            currentModel.amount = validatedData.amount;
+            currentModel.remarks = validatedData.remarks;
+            currentModel.issuedAt = validatedData.issuedAt;
+            currentModel.toAccountId = validatedData.toAccountId;
+            currentModel.fromAccountId = validatedData.fromAccountId;
+            return currentModel;
+          }
+        } catch (error) {
+          return next(error);
+        }
+      }
+    );
+  }
+
+  static async deleteTransaction(req, res, next) {
+    CrudOperation.deleteEntity(req, res, next, Transaction);
   }
 
   static async getTransactionByMonthWise(req, res) {
@@ -67,122 +137,6 @@ class transactionController {
       console.error("Error executing query:", error);
       res.status(500).send("Internal Server Error");
     }
-  }
-
-  static async createTransaction(req, res, next) {
-    try {
-      await CrudOperation.createEntity(
-        req,
-        res,
-        next,
-        Transaction,
-        async (body) => {
-          const {
-            type,
-            amount,
-            issuedAt,
-            cashType,
-            toAccountId,
-            fromAccountId,
-            remarks,
-          } = body;
-          req.body = {
-            type,
-            amount,
-            issuedAt,
-            toAccountId,
-            fromAccountId,
-            cashType,
-            userId: req.userId,
-            remarks,
-          };
-
-          // Check for essential fields
-          if (!type || !amount || !issuedAt) {
-            return next(
-              new AppError("Please provide all the required fields", 400)
-            );
-          }
-
-          // Validate transaction type and corresponding account IDs
-          const typeRequirements = {
-            deposit: {
-              required: "toAccountId",
-              missingMsg: "toAccountId for deposit transactions",
-            },
-            withdraw: {
-              required: "fromAccountId",
-              missingMsg: "fromAccountId for withdraw transactions",
-            },
-            transfer: {
-              required: ["toAccountId", "fromAccountId"],
-              missingMsg:
-                "both toAccountId and fromAccountId for transfer transactions",
-            },
-          };
-
-          const requirement = typeRequirements[type];
-          if (!requirement) {
-            return next(
-              new AppError(
-                "Invalid transaction type. Allowed types are: deposit, withdraw, transfer",
-                400
-              )
-            );
-          }
-
-          const requiredFields = Array.isArray(requirement.required)
-            ? requirement.required
-            : [requirement.required];
-          for (const field of requiredFields) {
-            if (!body[field]) {
-              return next(
-                new AppError(`Please provide ${requirement.missingMsg}`, 400)
-              );
-            }
-          }
-
-          // Vlaidate both account
-          if (toAccountId === fromAccountId) {
-            return next(new AppError(`Both Account cannot be same`, 404));
-          }
-
-          // Validate account existence
-          const accountIds = [toAccountId, fromAccountId].filter(Boolean);
-          for (const accountId of accountIds) {
-            const account = await Finance.findByPk(accountId);
-            if (!account) {
-              return next(new AppError(`Account does not exist.`, 404));
-            }
-          }
-
-          console.log("Validation passed");
-          return { mainValidation: true };
-        }
-      );
-    } catch (error) {
-      next(error);
-    }
-  }
-
-  static async updateTransaction(req, res, next) {
-    CrudOperation.updateEntity(
-      req,
-      res,
-      next,
-      Transaction,
-      function (updatedValue, currentModel) {
-        currentModel.status = updatedValue.status;
-        currentModel.type = updatedValue.type;
-        currentModel.amount = updatedValue.amount;
-        currentModel.remarks = updatedValue.remarks;
-        return currentModel;
-      }
-    );
-  }
-
-  static async deleteTransaction(req, res, next) {
-    CrudOperation.deleteEntity(req, res, next, Transaction);
   }
 }
 

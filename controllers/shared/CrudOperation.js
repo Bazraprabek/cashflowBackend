@@ -70,15 +70,20 @@ class CrudOperation {
     const { id } = req.params;
     const updatedValue = req.body;
     let currentModel = await model.findByPk(id);
-    console.log(currentModel);
+
     if (!currentModel) {
-      return searchEntityMissingError(next);
+      return next(new AppError("Entity not found", 404));
     }
-    const updatedModel = await cb(updatedValue, currentModel);
-    console.log(updatedModel);
+
+    const updatedModel = await await cb(updatedValue, currentModel);
+
     if (updatedModel) {
-      await updatedModel.save();
-      res.json(updatedModel);
+      if (updatedModel) {
+        await updatedModel.save();
+        res.json(updatedModel);
+      } else {
+        return next(new AppError("Failed to update entity", 400));
+      }
     }
   }
 
