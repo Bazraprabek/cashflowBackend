@@ -13,6 +13,7 @@ router
   .put(UserController.updateUser)
   .delete(UserController.deleteUser);
 router.post("/login", authController.login);
+router.post("/signup", authController.signup);
 router.post("/forgot-password", authController.forgotPassword);
 
 router.use(errorLogger);

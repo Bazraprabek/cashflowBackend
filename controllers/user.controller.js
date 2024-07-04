@@ -61,8 +61,8 @@ class UserController {
     );
   }
 
-  static async deleteUser(req, res) {
-    CrudOperation.deleteEntity(req, res, User);
+  static async deleteUser(req, res, next) {
+    CrudOperation.deleteEntity(req, res, next, userModel);
   }
 }
 
