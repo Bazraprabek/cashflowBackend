@@ -43,6 +43,19 @@ class CrudOperation {
     }
   }
 
+  static async getAllEntityExcluding(req, res, next, model) {
+    let entityResult = await model.findAll({
+      attributes: {
+        exclude: ["password", "role"],
+      },
+    });
+    if (entityResult) {
+      res.status(200).send(entityResult);
+    } else {
+      return searchEntityMissingError(next);
+    }
+  }
+
   static async getEntityById(req, res, next, model) {
     const { id } = req.params;
     let entityResult = await model.findByPk(id);
@@ -71,7 +84,6 @@ class CrudOperation {
 
   static async deleteEntity(req, res, next, model) {
     const { id } = req.params;
-
     let entityResult = await model.findByPk(id);
     console.log(entityResult);
     if (!entityResult) {

@@ -37,7 +37,7 @@ class UserController {
   }
 
   static async getAllUser(req, res, next) {
-    CrudOperation.getAllEntites(req, res, next, userModel);
+    CrudOperation.getAllEntityExcluding(req, res, next, userModel);
   }
 
   static async getUserById(req, res, next) {

@@ -45,6 +45,7 @@ Bank.init(
   },
   {
     sequelize,
+
     modelName: "Bank",
     tableName: "bank",
     timestamps: true,
