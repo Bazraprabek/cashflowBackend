@@ -1,8 +1,9 @@
 const User = require("../../models/User");
-const { generateToken } = require("../../utils/jwt");
+const { generateToken, verifyTokens } = require("../../utils/jwt");
+const { sendMail } = require("../../utils/mailer");
 
 class AuthController {
-  async login(req, res) {
+  static async login(req, res) {
     const { email, password } = req.body;
 
     if (!email || !password) {
@@ -15,7 +16,11 @@ class AuthController {
       let user = await User.findOne({ where: { email } });
 
       if (!user) {
-        return res.status(401).json({ message: "User has not registerd" });
+        return res.status(401).json({ message: "User has not registered." });
+      }
+
+      if (!user.isVerified) {
+        return res.status(403).json({ message: "User email is not verified." });
       }
 
       const isValidPassword = await user.validatePassword(password);
@@ -37,7 +42,7 @@ class AuthController {
     }
   }
 
-  async forgotPassword(req, res) {
+  static async forgotPassword(req, res) {
     const { email } = req.body;
 
     if (!email) {
@@ -51,6 +56,8 @@ class AuthController {
         return res.status(404).json({ message: "User not found." });
       }
 
+      // Implement your password reset logic here
+
       return res.status(200).json({
         message: "Password reset instructions have been sent to your email.",
       });
@@ -60,7 +67,7 @@ class AuthController {
     }
   }
 
-  async signup(req, res) {
+  static async signup(req, res) {
     const { username, email, contact, password, address } = req.body;
 
     if (!username || !email || !contact || !password || !address) {
@@ -83,12 +90,53 @@ class AuthController {
         address,
       });
 
-      return res.status(201).json(newUser);
+      const token = generateToken(newUser);
+      const verificationUrl = `http://localhost:3333/api/user/verify-email?token=${token}`;
+      await sendMail(
+        email,
+        "Email Verification",
+        `Please verify your email by clicking the following link: ${verificationUrl}`
+      );
+
+      return res.status(200).json({
+        message: "Please verify your email to complete the signup process.",
+      });
     } catch (error) {
       console.error("Error during signup:", error);
       return res.status(500).json({ message: "Internal server error." });
     }
   }
+
+  static async verifyEmailToken(req, res, next) {
+    const { token } = req.query;
+
+    if (!token) {
+      return res
+        .status(400)
+        .json({ message: "Verification token is missing." });
+    }
+
+    try {
+      const decoded = verifyTokens(token, req, next);
+      console.log("Token", decoded);
+      if (!decoded) {
+        return res.status(400).json({ message: "Invalid or expired token." });
+      }
+
+      const user = await User.findByPk(decoded.id);
+      if (!user) {
+        return res.status(400).json({ message: "Invalid verification token." });
+      }
+
+      user.isVerified = true;
+      await user.save();
+
+      res.status(200).json({ message: "Email verified successfully!" });
+    } catch (err) {
+      console.error("Error during email verification:", err);
+      res.status(500).json({ message: "Internal server error." });
+    }
+  }
 }
 
-module.exports = new AuthController();
+module.exports = AuthController;

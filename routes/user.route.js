@@ -1,22 +1,31 @@
 const express = require("express");
-const UserController = require("../controllers/user.controller");
 const authController = require("../controllers/auth/auth.controller");
+const {
+  createuser,
+  getAllUser,
+  getUserById,
+  updateUser,
+  deleteUser,
+} = require("../controllers/user.controller");
 const { errorLogger } = require("../middleware/Logger");
-const CatchAsync = require("../middleware/CatchAsync");
 const { isLoggedIn } = require("../middleware/Auth");
 
 const router = express.Router();
 
-router.post("/", UserController.createuser);
-router.get("/", UserController.getAllUser);
+router.post("/", createuser);
+router.get("/", getAllUser);
 router
   .route("/:id")
-  .get(UserController.getUserById)
-  .put(isLoggedIn, UserController.updateUser)
-  .delete(UserController.deleteUser);
+  .get(getUserById)
+  .put(isLoggedIn, updateUser)
+  .delete(deleteUser);
+
+// Auth routes
 router.post("/login", authController.login);
 router.post("/signup", authController.signup);
 router.post("/forgot-password", authController.forgotPassword);
+router.get("/verify-email", authController.verifyEmailToken);
 
 router.use(errorLogger);
+
 module.exports = router;
