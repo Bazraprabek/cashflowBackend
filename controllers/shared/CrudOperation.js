@@ -6,7 +6,7 @@ class CrudOperation {
     const validation = await cb(req.body);
     if (validation) {
       const createdModel = await model.create(req.body);
-      console.log("check", createdModel);
+      console.log("entity has been created");
       res.status(201).json(createdModel);
     }
   }
@@ -29,6 +29,7 @@ class CrudOperation {
 
       if (entities.rows.length > 0) {
         const totalPages = Math.ceil(entities.count / limit);
+        console.log("entity has been fetched");
         res.status(200).json({
           entities: entities.rows,
           currentPage: parseInt(page),
@@ -51,6 +52,7 @@ class CrudOperation {
     });
     if (entityResult) {
       res.status(200).send(entityResult);
+      console.log("entity has been fetched");
     } else {
       return searchEntityMissingError(next);
     }
@@ -63,7 +65,10 @@ class CrudOperation {
     if (!entityResult) {
       return searchEntityMissingError(next);
     }
-    if (entityResult) res.json(entityResult);
+    if (entityResult) {
+      res.json(entityResult);
+      console.log("entity has been sent");
+    }
   }
 
   static async updateEntity(req, res, next, model, cb) {
@@ -80,7 +85,8 @@ class CrudOperation {
     if (updatedModel) {
       if (updatedModel) {
         await updatedModel.save();
-        res.json(updatedModel);
+        res.status(200).json(updatedModel);
+        console.log("Entity has been updated");
       } else {
         return next(new AppError("Failed to update entity", 400));
       }
@@ -96,6 +102,8 @@ class CrudOperation {
     }
     if (entityResult) {
       await entityResult.destroy();
+      console.log("entity has been deleted");
+
       res.status(200).json({ id: id, msg: "Deleted Successfully" });
     }
   }

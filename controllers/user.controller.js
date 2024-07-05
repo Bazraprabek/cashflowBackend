@@ -51,11 +51,30 @@ class UserController {
       next,
       userModel,
       function (updatedValue, currentModel) {
-        currentModel.username = updatedValue.username;
-        currentModel.contact = updatedValue.contact;
-        currentModel.email = updatedValue.email;
-        currentModel.address = updatedValue.address;
-        currentModel.role = updatedValue.role;
+        if (updatedValue.newUpdatedValue.username) {
+          currentModel.username = updatedValue.newUpdatedValue.username;
+        }
+        if (updatedValue.newUpdatedValue.contact) {
+          currentModel.contact = updatedValue.newUpdatedValue.contact;
+        }
+        if (updatedValue.newUpdatedValue.email) {
+          currentModel.email = updatedValue.newUpdatedValue.email;
+        }
+
+        if (updatedValue.newUpdatedValue.address) {
+          currentModel.address = updatedValue.newUpdatedValue.address;
+        }
+
+        if (updatedValue.newUpdatedValue.gender) {
+          currentModel.gender = updatedValue.newUpdatedValue.gender;
+        }
+
+        if (updatedValue.newUpdatedValue.dateOfBirth) {
+          currentModel.dateOfBirth = updatedValue.newUpdatedValue.dateOfBirth;
+        }
+        if (updatedValue.newUpdatedValue.role) {
+          currentModel.role = updatedValue.newUpdatedValue.role;
+        }
         return currentModel;
       }
     );

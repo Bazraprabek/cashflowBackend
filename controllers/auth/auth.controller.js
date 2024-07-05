@@ -12,7 +12,7 @@ class AuthController {
     }
 
     try {
-      const user = await User.findOne({ where: { email } });
+      let user = await User.findOne({ where: { email } });
 
       if (!user) {
         return res.status(401).json({ message: "Invalid email or password." });
@@ -26,7 +26,11 @@ class AuthController {
 
       const token = generateToken(user);
 
-      return res.status(200).json({ token });
+      const userData = user.toJSON();
+      delete userData.password;
+      delete userData.role;
+
+      return res.status(200).json({ token, userData });
     } catch (error) {
       console.error("Error during login:", error);
       return res.status(500).json({ message: "Internal server error." });

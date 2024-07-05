@@ -2,6 +2,8 @@ const express = require("express");
 const UserController = require("../controllers/user.controller");
 const authController = require("../controllers/auth/auth.controller");
 const { errorLogger } = require("../middleware/Logger");
+const CatchAsync = require("../middleware/CatchAsync");
+const { isLoggedIn } = require("../middleware/Auth");
 
 const router = express.Router();
 
@@ -10,7 +12,7 @@ router.get("/", UserController.getAllUser);
 router
   .route("/:id")
   .get(UserController.getUserById)
-  .put(UserController.updateUser)
+  .put(isLoggedIn, UserController.updateUser)
   .delete(UserController.deleteUser);
 router.post("/login", authController.login);
 router.post("/signup", authController.signup);
