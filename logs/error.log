@@ -2973,3 +2973,14 @@ Sat, 06 Jul 2024 07:13:22 GMT	POST	/signup	localhost:3333	Error: Given entity ha
     at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
     at signup (D:\React\CBIT\cashflowBackend\controllers\auth\auth.controller.js:85:16)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Given entity has already been registered, try with new one !!!	Error
+Sat, 06 Jul 2024 08:09:29 GMT	GET	/getAllBank	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:190:16
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
