@@ -2953,3 +2953,23 @@ Fri, 05 Jul 2024 15:21:11 GMT	GET	/getAllWallet	localhost:3333	Error: Please sig
     at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
     at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
     at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Sat, 06 Jul 2024 07:07:27 GMT	POST	/signup	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at signup (D:\React\CBIT\cashflowBackend\controllers\auth\auth.controller.js:85:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Given entity has already been registered, try with new one !!!	Error
+Sat, 06 Jul 2024 07:08:35 GMT	POST	/signup	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at signup (D:\React\CBIT\cashflowBackend\controllers\auth\auth.controller.js:85:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Given entity has already been registered, try with new one !!!	Error
+Sat, 06 Jul 2024 07:08:49 GMT	POST	/signup	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at signup (D:\React\CBIT\cashflowBackend\controllers\auth\auth.controller.js:85:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Given entity has already been registered, try with new one !!!	Error
+Sat, 06 Jul 2024 07:13:22 GMT	POST	/signup	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (D:\React\CBIT\cashflowBackend\utils\Const.js:25:12)
+    at signup (D:\React\CBIT\cashflowBackend\controllers\auth\auth.controller.js:85:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Given entity has already been registered, try with new one !!!	Error

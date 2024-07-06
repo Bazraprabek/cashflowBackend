@@ -1,4 +1,8 @@
 const User = require("../../models/User");
+const {
+  entityAlreadyExistsError,
+  entityPropsMissingError,
+} = require("../../utils/Const");
 const { generateToken, verifyTokens, verifyToken } = require("../../utils/jwt");
 const { sendMail } = require("../../utils/mailer");
 
@@ -67,41 +71,42 @@ class AuthController {
     }
   }
 
-  static async signup(req, res) {
+  static async signup(req, res, next) {
     const { username, email, contact, password, address } = req.body;
 
     if (!username || !email || !contact || !password || !address) {
-      return res.status(400).json({ message: "All fields are required." });
+      return entityPropsMissingError(next);
     }
 
     try {
       const existingUser = await User.findOne({ where: { email } });
 
       if (existingUser) {
-        return res.status(409).json({ message: "Email is already in use." });
+        return entityAlreadyExistsError(next);
       }
 
-      const newUser = await User.create({
-        username,
-        email,
-        contact,
-        password,
-        role: "user",
-        address,
-      });
+      if (!existingUser) {
+        const newUser = await User.create({
+          username,
+          email,
+          contact,
+          password,
+          role: "user",
+          address,
+        });
 
-      const token = generateToken(newUser);
-      const verificationUrl = `http://localhost:3333/api/user/verify-email?token=${token}`;
+        const token = generateToken(newUser, "30m");
+        const verificationUrl = `http://localhost:3333/api/user/verify-email?token=${token}`;
+        await sendMail(
+          email,
+          "Email Verification",
+          `Please verify your email by clicking the following link: ${verificationUrl}`
+        );
 
-      await sendMail(
-        email,
-        "Email Verification",
-        `Please verify your email by clicking the following link: ${verificationUrl}`
-      );
-
-      return res.status(200).json({
-        message: "Please verify your email to complete the signup process.",
-      });
+        return res.status(200).json({
+          message: "Please verify your email to complete the signup process.",
+        });
+      }
     } catch (error) {
       console.error("Error during signup:", error);
       return res.status(500).json({ message: "Internal server error." });
@@ -110,7 +115,7 @@ class AuthController {
 
   static async verifyEmailToken(req, res, next) {
     const { token } = req.query;
-    console.log(token);
+
     if (!token) {
       return res
         .status(400)
