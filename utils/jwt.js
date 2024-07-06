@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 const AppError = require("../middleware/AppError");
 
-const generateToken = (user) => {
+const generateToken = (user, expireDate) => {
   const payload = {
     id: user.id,
     username: user.username,
@@ -10,7 +10,7 @@ const generateToken = (user) => {
   };
 
   const options = {
-    expiresIn: "30d",
+    expiresIn: expireDate || "30d",
   };
 
   const token = jwt.sign(payload, process.env.JWT_SECRET, options);
