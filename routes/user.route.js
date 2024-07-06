@@ -12,13 +12,15 @@ const { isLoggedIn } = require("../middleware/Auth");
 
 const router = express.Router();
 
+// Add debug logs
+router.use((req, res, next) => {
+  console.log(`Received request: ${req.method} ${req.originalUrl}`);
+  next();
+});
+
+// User routes
 router.post("/", createuser);
 router.get("/", getAllUser);
-router
-  .route("/:id")
-  .get(getUserById)
-  .put(isLoggedIn, updateUser)
-  .delete(deleteUser);
 
 // Auth routes
 router.post("/login", authController.login);
@@ -26,6 +28,13 @@ router.post("/signup", authController.signup);
 router.post("/forgot-password", authController.forgotPassword);
 router.get("/verify-email", authController.verifyEmailToken);
 
+router
+  .route("/:id")
+  .get(getUserById)
+  .put(isLoggedIn, updateUser)
+  .delete(deleteUser);
+
+// Error logging
 router.use(errorLogger);
 
 module.exports = router;

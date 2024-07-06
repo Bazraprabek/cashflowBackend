@@ -1,5 +1,5 @@
 const User = require("../../models/User");
-const { generateToken, verifyTokens } = require("../../utils/jwt");
+const { generateToken, verifyTokens, verifyToken } = require("../../utils/jwt");
 const { sendMail } = require("../../utils/mailer");
 
 class AuthController {
@@ -91,7 +91,6 @@ class AuthController {
       });
 
       const token = generateToken(newUser);
-
       const verificationUrl = `http://localhost:3333/api/user/verify-email?token=${token}`;
 
       await sendMail(
@@ -119,7 +118,7 @@ class AuthController {
     }
 
     try {
-      const decoded = verifyTokens(token, req, next);
+      const decoded = verifyToken(token, req, next);
       console.log("Token", decoded);
       if (!decoded) {
         return res.status(400).json({ message: "Invalid or expired token." });
