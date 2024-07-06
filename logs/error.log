@@ -2909,3 +2909,47 @@ Fri, 05 Jul 2024 03:58:11 GMT	PUT	/NaN	localhost:3333	Error: Please signin with 
     at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
     at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
     at param (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:365:14)	Please signin with your registered account!!!	Error
+Fri, 05 Jul 2024 15:20:00 GMT	GET	/getAllWallet	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:33:14)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Fri, 05 Jul 2024 15:20:10 GMT	GET	/getAllBank	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:33:14)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Fri, 05 Jul 2024 15:21:01 GMT	GET	/	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:33:14)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:47:12)	Please signin with your registered account!!!	Error
+Fri, 05 Jul 2024 15:21:11 GMT	GET	/getAllWallet	localhost:3333	Error: Please signin with your registered account!!!
+    at throwError (D:\React\CBIT\cashflowBackend\utils\Const.js:4:15)
+    at noTokenError (D:\React\CBIT\cashflowBackend\utils\Const.js:17:12)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:33:14)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error

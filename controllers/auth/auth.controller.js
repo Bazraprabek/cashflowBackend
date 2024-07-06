@@ -91,7 +91,9 @@ class AuthController {
       });
 
       const token = generateToken(newUser);
+
       const verificationUrl = `http://localhost:3333/api/user/verify-email?token=${token}`;
+
       await sendMail(
         email,
         "Email Verification",
@@ -109,7 +111,7 @@ class AuthController {
 
   static async verifyEmailToken(req, res, next) {
     const { token } = req.query;
-
+    console.log(token);
     if (!token) {
       return res
         .status(400)
