@@ -23,8 +23,8 @@ router
 // Auth routes
 router.post("/login", authController.login);
 router.post("/signup", authController.signup);
-router.post("/forgot-password", authController.forgotPassword);
-router.get("/verify-email", authController.verifyEmailToken);
+router.post("/auth/forgot-password", authController.forgotPassword);
+router.get("/auth/verify-email", authController.verifyEmailToken);
 
 router.use(errorLogger);
 
