@@ -91,7 +91,7 @@ class AuthController {
       });
 
       const token = generateToken(newUser, "30m");
-      const verificationUrl = `http://localhost:3333/api/user/auth/verify-email?token=${token}`;
+      const verificationUrl = `http://localhost:3333/api/user/verify-email?token=${token}`;
       await sendMail(
         email,
         "Email Verification",
