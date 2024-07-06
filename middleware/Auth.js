@@ -1,20 +1,20 @@
-const User = require("../models/User");
-const { verifyToken } = require("../utils/jwt");
-const AppError = require("./AppError");
+const { unAuthorizedError, noTokenError } = require("../utils/Const");
+const { verifyTokens } = require("../utils/jwt");
 
 class Auth {
   static isAdmin(req, res, next) {
     const token = req.headers.authorization;
     if (token) {
       let userToken = token.split(" ")[1];
-      const decode = verifyToken(userToken);
-
-      if (decode.role === "admin") next();
-      else {
-        return next(new AppError("You are not authorized"), 400);
+      const decode = verifyTokens(userToken, req, next);
+      console.log("admin decode done");
+      if (decode.role === "admin") {
+        next();
+      } else {
+        unAuthorizedError(next);
       }
     } else {
-      return next(new AppError("Please authorized first", 404));
+      noTokenError(next);
     }
   }
 
@@ -22,21 +22,31 @@ class Auth {
     const token = req.headers.authorization;
     if (token) {
       let userToken = token.split(" ")[1];
-      const decode = verifyToken(userToken);
+      const decode = verifyTokens(userToken, req, next);
+      console.log(decode);
       if (decode) {
-        const findUser = await User.findOne({
-          where: { username: decode.username },
-        });
-        if (findUser) {
-          next();
-        } else {
-          return next(new AppError("Please sign in your account"), 400);
-        }
+        req.userId = decode.id;
+      }
+      next();
+    } else {
+      console.log("no token");
+      return noTokenError(next);
+    }
+  }
+
+  static async isAuthorized(req, res, next) {
+    const token = req.headers.authorization;
+    if (token) {
+      let userToken = token.split(" ")[1];
+      const decode = verifyTokens(userToken, req, next);
+      console.log(decode);
+      if (decode) {
+        next();
       } else {
-        return next(new AppError("You are not authorized"), 400);
+        return unAuthorizedError(next);
       }
     } else {
-      return next(new AppError("Please authorized first", 404));
+      return noTokenError(next);
     }
   }
 }

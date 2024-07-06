@@ -24,6 +24,9 @@ GET http://localhost:3333/api/wallet/getAllWallet
 GET http://localhost:3333/api/wallet/1
 
 ###
+GET http://localhost:3333/api/user
+
+###
 POST http://localhost:3333/api/wallet/createWallet HTTP/1.1
 content-type: application/json
 {

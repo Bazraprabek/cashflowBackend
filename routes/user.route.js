@@ -1,19 +1,40 @@
 const express = require("express");
-const UserController = require("../controllers/user.controller");
 const authController = require("../controllers/auth/auth.controller");
+const {
+  createuser,
+  getAllUser,
+  getUserById,
+  updateUser,
+  deleteUser,
+} = require("../controllers/user.controller");
 const { errorLogger } = require("../middleware/Logger");
+const { isLoggedIn } = require("../middleware/Auth");
 
 const router = express.Router();
 
-router.post("/", UserController.createuser);
-router.get("/", UserController.getAllUser);
+// Add debug logs
+router.use((req, res, next) => {
+  console.log(`Received request: ${req.method} ${req.originalUrl}`);
+  next();
+});
+
+// User routes
+router.post("/", createuser);
+router.get("/", getAllUser);
+
+// Auth routes
+router.post("/login", authController.login);
+router.post("/signup", authController.signup);
+router.post("/forgot-password", authController.forgotPassword);
+router.get("/verify-email", authController.verifyEmailToken);
+
 router
   .route("/:id")
-  .get(UserController.getUserById)
-  .put(UserController.updateUser)
-  .delete(UserController.deleteUser);
-router.post("/login", authController.login);
-router.post("/forgot-password", authController.forgotPassword);
+  .get(getUserById)
+  .put(isLoggedIn, updateUser)
+  .delete(deleteUser);
 
+// Error logging
 router.use(errorLogger);
+
 module.exports = router;

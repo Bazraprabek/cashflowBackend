@@ -1,29 +1,72 @@
 const BankModel = require("../../models/finance/Bank");
 const { CrudOperation } = require("../shared/CrudOperation");
-const AppError = require("../../middleware/AppError");
+const {
+  entityAlreadyExistsError,
+  entityPropsMissingError,
+  searchForEntityData,
+} = require("../../utils/Const");
 
 class BankController {
   static createBank(req, res, next) {
     CrudOperation.createEntity(
       req,
       res,
-      BankModel,
       next,
+      BankModel,
       async function (body) {
         let nameValidation = false;
-        if (body) {
-          const dbResult = await BankModel.findOne({
-            where: { bankName: body.bankName },
+
+        if (body.bankName) {
+          // const dbResult = await BankModel.findOne({
+          //   where: { bankName: body.bankName },
+          // });
+          // if (dbResult) {
+          //   if (!body.swiftcode) {
+          //     return entityPropsMissingError(next);
+          //   }
+          //   if (body.swiftcode) {
+          //     const uniqueCheck = await BankModel.findOne({
+          //       where: { swiftcode: body.swiftcode },
+          //     });
+          //     if (uniqueCheck) {
+          //       console.log("Match Found");
+          //     }
+          //   }
+          //   nameValidation = true;
+          //   return entityAlreadyExistsError(next);
+
+          // } else {
+          //   nameValidation = true;
+          //   return nameValidation;
+          // }
+          const dataResult = await BankModel.findOne({
+            where: {
+              bankName: body.bankName,
+            },
           });
-          if (dbResult) {
-            nameValidation = true;
-            return next(new AppError("Name has already been created", 404));
-          } else {
-            mainValidation = true;
-            return nameValidation;
+          if (!dataResult) {
+            if (body.swiftcode) {
+              const uniqueResult = await BankModel.findOne({
+                where: {
+                  swiftcode: body.swiftcode,
+                },
+              });
+              if (uniqueResult) {
+                return entityAlreadyExistsError(next);
+              }
+              if (!uniqueResult) {
+                console.log("return true");
+                return true;
+              }
+            } else {
+              return entityPropsMissingError(next);
+            }
+          }
+          if (dataResult) {
+            return entityAlreadyExistsError(next);
           }
         } else {
-          return next(new AppError("Please provide the required field", 404));
+          return entityPropsMissingError(next);
         }
       }
     );
@@ -60,8 +103,8 @@ class BankController {
     );
   }
 
-  static async deleteBank(req, res) {
-    CrudOperation.deleteEntity(req, res, BankModel);
+  static async deleteBank(req, res, next) {
+    CrudOperation.deleteEntity(req, res, next, BankModel);
   }
 }
 

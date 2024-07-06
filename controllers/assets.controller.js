@@ -12,7 +12,7 @@ exports.createAsset = (req, res, next) => {
 };
 
 exports.getAllAssets = (req, res, next) => {
-  CrudOperation.getAllEntites(req, res, next, Asset, {});
+  CrudOperation.getAllEntites(req, res, next, Asset);
 };
 
 exports.getAssetById = (req, res, next) => {
@@ -36,5 +36,5 @@ exports.updateAsset = (req, res, next) => {
 };
 
 exports.deleteAsset = (req, res, next) => {
-  CrudOperation.deleteEntity(req, res, next, Asset, {});
+  CrudOperation.deleteEntity(req, res, next, Asset);
 };

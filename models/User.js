@@ -32,6 +32,18 @@ User.init(
       allowNull: false,
       defaultValue: "user",
     },
+    dateOfBirth: {
+      type: DataTypes.DATEONLY,
+      allowNull: true,
+    },
+    gender: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    isVerified: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,

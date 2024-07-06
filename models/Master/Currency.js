@@ -17,9 +17,10 @@ Currency.init(
     countryId: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Countries', // Name of the table in the database
-        key: 'id',
+        model: "Countries", // Name of the table in the database
+        key: "id",
       },
+      onDelete: "CASCADE",
       allowNull: false,
     },
   },
