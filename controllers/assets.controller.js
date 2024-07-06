@@ -1,4 +1,3 @@
-// controllers/assetController.js
 const { CrudOperation } = require("./shared/CrudOperation");
 const Asset = require("../models/Asset");
 const AppError = require("../middleware/AppError");
