@@ -12,6 +12,9 @@ const { isLoggedIn } = require("../middleware/Auth");
 
 const router = express.Router();
 
+// Error logging
+router.use(errorLogger);
+
 // Add debug logs
 router.use((req, res, next) => {
   console.log(`Received request: ${req.method} ${req.originalUrl}`);
@@ -33,8 +36,5 @@ router
   .get(getUserById)
   .put(isLoggedIn, updateUser)
   .delete(deleteUser);
-
-// Error logging
-router.use(errorLogger);
 
 module.exports = router;

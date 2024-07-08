@@ -13,6 +13,8 @@ const { errorLogger } = require("../middleware/Logger");
 
 const router = express.Router();
 
+router.use(errorLogger);
+
 router.use(isLoggedIn);
 router.get("/", index);
 router.get("/getAllTransaction", getAllEntites);
@@ -23,7 +25,5 @@ router
   .put(updateTransaction)
   .delete(deleteTransaction)
   .get(getTransactionById);
-
-router.use(errorLogger);
 
 module.exports = router;

@@ -50,6 +50,7 @@ Transaction.init(
       type: DataTypes.DATE,
       allowNull: false,
     },
+
     remarks: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -61,16 +62,16 @@ Transaction.init(
   }
 );
 
-Transaction.belongsTo(User, { foreignKey: "userId" });
-Transaction.associate = (models) => {
-  Transaction.belongsTo(models.Finance, {
-    as: "fromAccount",
-    foreignKey: "fromAccountId",
-  });
-  Transaction.belongsTo(models.Finance, {
-    as: "toAccount",
-    foreignKey: "toAccountId",
-  });
-};
+// Transaction.belongsTo(User, { foreignKey: "userId" });
+// Transaction.associate = (models) => {
+//   Transaction.belongsTo(models.Finance, {
+//     as: "fromAccount",
+//     foreignKey: "fromAccountId",
+//   });
+//   Transaction.belongsTo(models.Finance, {
+//     as: "toAccount",
+//     foreignKey: "toAccountId",
+//   });
+// };
 
 module.exports = Transaction;

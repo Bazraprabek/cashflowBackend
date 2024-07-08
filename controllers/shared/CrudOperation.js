@@ -1,3 +1,4 @@
+const { where } = require("sequelize");
 const AppError = require("../../middleware/AppError");
 const { searchEntityMissingError } = require("../../utils/Const");
 
@@ -55,6 +56,22 @@ class CrudOperation {
       console.log("entity has been fetched");
     } else {
       return searchEntityMissingError(next);
+    }
+  }
+
+  static async getAllOwnEntity(req, res, next, model) {
+    console.log(req.userId);
+    let entityResult = await model.findAll({
+      where: {
+        userId: req.userId,
+      },
+    });
+    if (!entityResult) {
+      return searchEntityMissingError(next);
+    }
+    if (entityResult) {
+      res.status(200).send(entityResult);
+      console.log("entity has been fetched");
     }
   }
 

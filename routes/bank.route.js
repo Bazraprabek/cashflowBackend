@@ -13,6 +13,7 @@ const CatchAsync = require("../middleware/CatchAsync");
 const router = express.Router();
 
 router.use(logger);
+router.use(errorLogger);
 router.route("/createBank").post(isAdmin, createBank);
 
 router.route("/insert").post(
@@ -27,7 +28,5 @@ router
   .get(isLoggedIn, getBankById)
   .delete(isAdmin, deleteBank)
   .put(isAdmin, updateBank);
-
-router.use(errorLogger);
 
 module.exports = router;

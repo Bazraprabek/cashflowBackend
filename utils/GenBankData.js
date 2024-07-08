@@ -1,4 +1,3 @@
-const sequelize = require("../config/db");
 const Bank = require("../models/finance/Bank");
 const { bankData } = require("./Bank");
 const db = require("././../config/db");
