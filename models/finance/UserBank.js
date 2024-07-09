@@ -38,14 +38,6 @@ UserBank.init(
       type: DataTypes.DOUBLE,
       allowNull: true,
     },
-    transactionHistory: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: Transaction,
-        key: "id",
-      },
-    },
   },
 
   {
@@ -56,5 +48,17 @@ UserBank.init(
     timestamps: true,
   }
 );
+
+// UserBank.associate = (models) => {
+//   UserBank.hasMany(models.Transaction, {
+//     foreignKey: "toBankAccountId",
+//   });
+// };
+
+// UserBank.associate = (models) => {
+//   UserBank.hasMany(models.Transaction, {
+//     foreignKey: "fromBankAccountId",
+//   });
+// };
 
 module.exports = UserBank;

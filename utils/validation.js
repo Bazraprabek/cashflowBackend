@@ -1,5 +1,15 @@
 const AppError = require("../middleware/AppError");
-const Finance = require("../models/Finance");
+// const Bank = require("../models/finance/Bank");
+const UserBank = require("../models/finance/UserBank");
+const UserWallet = require("../models/finance/UserWallet");
+// const Wallet = require("../models/finance/Wallet");
+
+const isValidDate = (dateString) => {
+  console.log("frontend", dateString);
+  const date = new Date(dateString);
+  console.log("backend", date);
+  return !isNaN(date.getTime()) && /^\d{4}-\d{2}-\d{2}$/.test(dateString);
+};
 
 async function validateTransaction(req, next, body) {
   let {
@@ -7,34 +17,49 @@ async function validateTransaction(req, next, body) {
     amount,
     issuedAt,
     cashType,
-    toAccountId,
-    fromAccountId,
-    remarks,
+    fromBankAccountId,
+    toBankAccountId,
+    fromWalletAccountId,
+    toWalletAccountId,
+    source,
+    chequeIssueDate,
+    chequeCashoutDate,
+    chequeCashoutAvailableData,
+    alert,
+    userId,
   } = body;
 
+  if (
+    (chequeIssueDate && !isValidDate(chequeIssueDate)) ||
+    (chequeCashoutAvailableData && !isValidDate(chequeCashoutAvailableData)) ||
+    (chequeCashoutDate && !isValidDate(chequeCashoutDate))
+  ) {
+    return next(new AppError("Invalid format"), 400);
+  }
+
   // Check for essential fields
-  if (!type || !amount || !issuedAt) {
+  if (!type || !amount) {
     return next(new AppError("Please provide all the required fields", 400));
   }
 
   // Validate transaction type and corresponding account IDs
   const typeRequirements = {
     deposit: {
-      required: "toAccountId",
+      required: "toBankAccountId",
       missingMsg: "toAccountId for deposit transactions",
     },
     withdraw: {
-      required: "fromAccountId",
+      required: "fromBankAccountId",
       missingMsg: "fromAccountId for withdraw transactions",
     },
     transfer: {
-      required: ["toAccountId", "fromAccountId"],
+      required: ["toBankAccountId", "fromBankAccountId"],
       missingMsg:
         "both toAccountId and fromAccountId for transfer transactions",
     },
   };
 
-  const requirement = typeRequirements[type];
+  let requirement = typeRequirements[type];
   if (!requirement) {
     return next(
       new AppError(
@@ -44,10 +69,10 @@ async function validateTransaction(req, next, body) {
     );
   }
 
-  const requiredFields = Array.isArray(requirement.required)
+  let requiredFields = Array.isArray(requirement.required)
     ? requirement.required
     : [requirement.required];
-  for (const field of requiredFields) {
+  for (let field of requiredFields) {
     if (!body[field]) {
       return next(
         new AppError(`Please provide ${requirement.missingMsg}`, 400)
@@ -57,13 +82,18 @@ async function validateTransaction(req, next, body) {
 
   // Set account IDs to null if not needed
   if (type === "deposit") {
-    fromAccountId = null;
+    fromBankAccountId = null;
+    fromWalletAccountId = null;
   } else if (type === "withdraw") {
-    toAccountId = null;
+    toBankAccountId = null;
+    toWalletAccountId = null;
   }
 
   // Validate that both accounts are not the same for transfer transactions
-  if (type === "transfer" && toAccountId === fromAccountId) {
+  if (
+    (type === "transfer" && toBankAccountId === fromBankAccountId) ||
+    toWalletAccountId === fromWalletAccountId
+  ) {
     return next(
       new AppError(
         "Both accounts cannot be the same for transfer transactions",
@@ -73,16 +103,30 @@ async function validateTransaction(req, next, body) {
   }
 
   // Validate account existence
-  const accountIds = [];
-  if (toAccountId) accountIds.push(toAccountId);
-  if (fromAccountId) accountIds.push(fromAccountId);
+  let bankaccountIds = [];
+  if (toBankAccountId) bankaccountIds.push(toBankAccountId);
+  if (fromBankAccountId) bankaccountIds.push(fromBankAccountId);
 
-  for (const accountId of accountIds) {
-    const account = await Finance.findByPk(accountId);
+  for (const accountId of bankaccountIds) {
+    const account = await UserBank.findByPk(accountId);
     if (!account) {
       return next(new AppError("Account does not exist.", 404));
     }
-    if (account.userId !== req.userId) {
+    if (userId !== req.userId) {
+      return next(new AppError("Unauthorized User.", 401));
+    }
+  }
+
+  let walletaccountIds = [];
+  if (toWalletAccountId) walletaccountIds.push(toWalletAccountId);
+  if (fromWalletAccountId) walletaccountIds.push(fromWalletAccountId);
+
+  for (const accountId of walletaccountIds) {
+    const account = await UserWallet.findByPk(accountId);
+    if (!account) {
+      return next(new AppError("Account does not exist.", 404));
+    }
+    if (userId !== req.userId) {
       return next(new AppError("Unauthorized User.", 401));
     }
   }
@@ -93,9 +137,16 @@ async function validateTransaction(req, next, body) {
     amount,
     issuedAt,
     cashType,
-    toAccountId,
-    fromAccountId,
-    remarks,
+    fromBankAccountId,
+    toBankAccountId,
+    fromWalletAccountId,
+    toWalletAccountId,
+    source,
+    chequeIssueDate,
+    chequeCashoutDate,
+    chequeCashoutAvailableData,
+    alert,
+    userId,
   };
 }
 

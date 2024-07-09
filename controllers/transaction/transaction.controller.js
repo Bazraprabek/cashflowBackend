@@ -2,6 +2,7 @@ const AppError = require("../../middleware/AppError");
 const Finance = require("../../models/Finance");
 const Transaction = require("../../models/Transaction");
 const User = require("../../models/User");
+const UserBank = require("../../models/finance/UserBank");
 const { validateTransaction } = require("../../utils/validation");
 const { CrudOperation } = require("../shared/CrudOperation");
 const { Sequelize } = require("sequelize");
@@ -19,27 +20,74 @@ class transactionController {
     CrudOperation.getEntityById(req, res, next, Transaction);
   }
 
+  static async getDepositOfUserBankById(req, res, next) {
+    const userId = req.params.id;
+    console.log("deposit", userId);
+    const where = { toBankAccountId: userId };
+
+    const include = [
+      {
+        model: UserBank,
+        as: "userbank",
+        attributes: {
+          exclude: ["updatedAt", "createAt"],
+        },
+      },
+    ];
+
+    CrudOperation.getAllEntityWithCustomIdInLimit(
+      req,
+      res,
+      next,
+      Transaction,
+      where,
+      include
+    );
+  }
+
+  static async getWithdrawOfUserBankById(req, res, next) {
+    const userId = req.params.id;
+    console.log(userId);
+    const where = { fromAccountId: userId };
+    const include = [
+      {
+        model: UserBank,
+        as: "UserBank",
+        attributes: {
+          exclude: ["updatedAt", "createAt"],
+        },
+      },
+    ];
+    CrudOperation.getAllEntityWithCustomIdInLimit(
+      req,
+      res,
+      next,
+      Transaction,
+      where,
+      include
+    );
+  }
+
   static async createTransaction(req, res, next) {
-    try {
-      await CrudOperation.createEntity(
-        req,
-        res,
-        next,
-        Transaction,
-        async (body) => {
-          const validatedData = await validateTransaction(req, next, body);
-          if (validatedData) {
-            req.body = {
-              ...validatedData,
-              userId: req.userId,
-            };
-            return { mainValidation: true };
-          }
+    await CrudOperation.createEntity(
+      req,
+      res,
+      next,
+      Transaction,
+      async (body) => {
+        let validatedData = await validateTransaction(req, next, body);
+        console.log(validatedData);
+        if (validatedData) {
+          req.body = {
+            ...validatedData,
+            userId: req.userId,
+          };
+          return { mainValidation: true };
+        } else {
+          return false;
         }
-      );
-    } catch (error) {
-      next(error);
-    }
+      }
+    );
   }
 
   static async updateTransaction(req, res, next) {

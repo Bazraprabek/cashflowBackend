@@ -27,14 +27,6 @@ UserWallet.init(
       type: DataTypes.DOUBLE,
       allowNull: true,
     },
-    transactionHistroy: {
-      type: DataTypes.ARRAY(DataTypes.INTEGER),
-      allowNull: true,
-      references: {
-        model: Transaction,
-        key: "id",
-      },
-    },
   },
 
   {

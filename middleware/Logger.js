@@ -46,9 +46,9 @@ class Logger {
 const developmentError = (err, req, res) => {
   console.log(res.name);
   console.log("Devs Error  :::  ");
-  const statusCode = err.statusCode || 500;
-  const status = err.status || "error";
-  const message = err.message || "Something went wrong!";
+  let statusCode = err.statusCode || 500;
+  let status = err.status || "error";
+  let message = err.message || "Something went wrong!";
 
   if (err.name === "SequelizeValidationError") {
     statusCode = 400;

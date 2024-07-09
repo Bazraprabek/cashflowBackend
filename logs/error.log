@@ -3060,3 +3060,1049 @@ Mon, 08 Jul 2024 05:55:28 GMT	GET	/getAllWallet	localhost:3333	Error: Please sig
     at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
     at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
     at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)	Please signin with your registered account!!!	Error
+Tue, 09 Jul 2024 04:23:35 GMT	POST	/	localhost:3333	Error: Please provide toAccountId for deposit transactions
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:61:9)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:30:39
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:27)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide toAccountId for deposit transactions	Error
+Tue, 09 Jul 2024 04:24:21 GMT	POST	/	localhost:3333	Error: Please provide toAccountId for deposit transactions
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:61:9)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:30:39
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:27)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide toAccountId for deposit transactions	Error
+Tue, 09 Jul 2024 04:25:05 GMT	POST	/	localhost:3333	Error: Please provide toAccountId for deposit transactions
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:61:9)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:30:39
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:27)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide toAccountId for deposit transactions	Error
+Tue, 09 Jul 2024 04:25:23 GMT	POST	/	localhost:3333	Error: Please provide toAccountId for deposit transactions
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:61:9)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:30:39
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:27)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide toAccountId for deposit transactions	Error
+Tue, 09 Jul 2024 04:26:54 GMT	POST	/	localhost:3333	ReferenceError: accountIds is not defined
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:90:24)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:30:39
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:27)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	accountIds is not defined	ReferenceError
+Tue, 09 Jul 2024 04:27:33 GMT	POST	/	localhost:3333	ReferenceError: accountIds is not defined
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:90:24)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:30:39
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:27)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	accountIds is not defined	ReferenceError
+Tue, 09 Jul 2024 04:28:20 GMT	POST	/	localhost:3333	ReferenceError: remarks is not defined
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:132:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:30:33
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:24)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:7)	remarks is not defined	ReferenceError
+Tue, 09 Jul 2024 04:29:01 GMT	POST	/	localhost:3333	SequelizeValidationError: Validation error: Validation isIn on cashType failed
+    at InstanceValidator._validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async Transaction.save (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:2426:7)
+    at async Transaction.create (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:1362:12)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:9:28)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:7)	Validation error: Validation isIn on cashType failed	SequelizeValidationError
+Tue, 09 Jul 2024 04:29:49 GMT	POST	/	localhost:3333	SequelizeValidationError: Validation error: Validation isIn on cashType failed
+    at InstanceValidator._validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async Transaction.save (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:2426:7)
+    at async Transaction.create (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:1362:12)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:9:28)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:7)	Validation error: Validation isIn on cashType failed	SequelizeValidationError
+Tue, 09 Jul 2024 04:30:50 GMT	POST	/	localhost:3333	SequelizeValidationError: Validation error: Validation isIn on cashType failed
+    at InstanceValidator._validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async Transaction.save (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:2426:7)
+    at async Transaction.create (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:1362:12)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:9:28)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:7)	Validation error: Validation isIn on cashType failed	SequelizeValidationError
+Tue, 09 Jul 2024 04:31:35 GMT	POST	/	localhost:3333	SequelizeValidationError: Validation error: Validation isIn on cashType failed
+    at InstanceValidator._validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async Transaction.save (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:2426:7)
+    at async Transaction.create (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:1362:12)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:9:28)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:7)	Validation error: Validation isIn on cashType failed	SequelizeValidationError
+Tue, 09 Jul 2024 04:33:28 GMT	POST	/	localhost:3333	SequelizeValidationError: Validation error: Validation isIn on cashType failed
+    at InstanceValidator._validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async Transaction.save (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:2426:7)
+    at async Transaction.create (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:1362:12)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:9:28)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:7)	Validation error: Validation isIn on cashType failed	SequelizeValidationError
+Tue, 09 Jul 2024 04:34:56 GMT	POST	/	localhost:3333	SequelizeValidationError: Validation error: Validation isIn on cashType failed
+    at InstanceValidator._validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async Transaction.save (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:2426:7)
+    at async Transaction.create (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:1362:12)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:9:28)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:7)	Validation error: Validation isIn on cashType failed	SequelizeValidationError
+Tue, 09 Jul 2024 04:35:24 GMT	POST	/	localhost:3333	Error
+    at Query.run (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.insert (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async Transaction.save (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:2490:35)
+    at async Transaction.create (D:\React\CBIT\cashflowBackend\node_modules\sequelize\lib\model.js:1362:12)
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:9:28)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:24:7)	invalid input syntax for type timestamp with time zone: "Invalid date"	SequelizeDatabaseError
+Tue, 09 Jul 2024 05:12:11 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:34:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:12:21 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:34:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:14:21 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:20:13 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:21:45 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:45 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:47 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:48 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:48 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:49 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:49 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:49 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:49 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:50 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:50 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:50 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:51 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:51 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:52 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:52 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:52 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:52 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:52 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:53 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:53 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:53 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:53 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:24:54 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:26:52 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:26:53 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:02 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:03 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:04 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:05 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:05 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:05 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:05 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:05 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:05 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:06 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:06 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:23 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:27:38 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:28:01 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:28:15 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:28:41 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:28:53 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:29:21 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:29:30 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:29:42 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 05:29:55 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:05:35 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:06:17 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:06:35 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:06:52 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:07:30 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:08:45 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:09:14 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:10:27 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:10:57 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:15:20 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:16:14 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:19:30 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:20:17 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:21:04 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:23:43 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:37:13 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:46:26 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:36:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:48:00 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:41:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:48:42 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:41:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 06:49:18 GMT	POST	/	localhost:3333	Error: Please provide the date in correct format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:41:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide the date in correct format	Error
+Tue, 09 Jul 2024 07:19:33 GMT	POST	/	localhost:3333	Error: Invalid format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid format	Error
+Tue, 09 Jul 2024 07:20:30 GMT	POST	/	localhost:3333	Error: Please provide all the required fields
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:40:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide all the required fields	Error
+Tue, 09 Jul 2024 07:21:01 GMT	POST	/	localhost:3333	Error: Please provide all the required fields
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:40:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Please provide all the required fields	Error
+Tue, 09 Jul 2024 07:36:54 GMT	POST	/	localhost:3333	Error: Invalid format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid format	Error
+Tue, 09 Jul 2024 07:47:34 GMT	POST	/	localhost:3333	Error: Invalid format
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:35:17)
+    at D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:29:35
+    at CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:30)
+    at createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:23:25)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid format	Error
+Tue, 09 Jul 2024 10:47:35 GMT	GET	/getTransactionOfUserBankById/2	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:190:16
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
+Tue, 09 Jul 2024 10:48:04 GMT	GET	/getTransactionOfUserBankById/2	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:82:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:175:3)	Invalid token. Please log in again.	Error
+Tue, 09 Jul 2024 10:49:21 GMT	GET	/getTransactionOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 10:49:23 GMT	GET	/getTransactionOfUserBankById/12	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:09:58 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:09:58 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:10:07 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:10:07 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:11:51 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:11:51 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:12:13 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:12:13 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:12:34 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:12:34 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:13:18 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:13:18 GMT	GET	/getDepositOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:68:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Tue, 09 Jul 2024 11:23:24 GMT	GET	/getAllTransaction	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:190:16
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error

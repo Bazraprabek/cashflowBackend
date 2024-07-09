@@ -45,6 +45,42 @@ class CrudOperation {
     }
   }
 
+  static async getAllEntityWithCustomIdInLimit(
+    req,
+    res,
+    next,
+    model,
+    where,
+    include
+  ) {
+    const { page = 1, limit = 10 } = req.query;
+    const offset = (page - 1) * limit;
+    try {
+      const entities = await model.findAndCountAll({
+        where,
+        // include,
+        offset,
+        limit: parseInt(limit),
+      });
+
+      if (entities.rows.length > 0) {
+        const totalPages = Math.ceil(entities.count / limit);
+        console.log(entities.rows);
+        console.log("entity has been fetched");
+        res.status(200).json({
+          entities: entities.rows,
+          currentPage: parseInt(page),
+          totalPages,
+          totalEntities: entities.count,
+        });
+      } else {
+        return next(new AppError("Data was not found", 404));
+      }
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  }
+
   static async getAllEntityExcluding(req, res, next, model) {
     let entityResult = await model.findAll({
       attributes: {
@@ -66,6 +102,7 @@ class CrudOperation {
         userId: req.userId,
       },
     });
+    console.log(entityResult);
     if (!entityResult) {
       return searchEntityMissingError(next);
     }

@@ -1,7 +1,9 @@
 const { DataTypes, Model } = require("sequelize");
 const sequelize = require("../config/db");
 const User = require("./User");
-const Finance = require("./Finance");
+const Bank = require("./finance/Bank");
+const UserWallet = require("./finance/UserWallet");
+const UserBank = require("./finance/UserBank");
 
 class Transaction extends Model {}
 
@@ -24,54 +26,102 @@ Transaction.init(
     cashType: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        isIn: [["cash", "cheque"]],
-      },
     },
     amount: {
       type: DataTypes.FLOAT,
       allowNull: false,
     },
-    fromAccountId: {
+    fromBankAccountId: {
       type: DataTypes.INTEGER,
+      allowNull: true,
       references: {
-        model: Finance, // References the Finance model
+        model: UserBank, // References the Finance model
         key: "id", // Assumes the primary key of Finance model is 'id'
       },
     },
-    toAccountId: {
+    toBankAccountId: {
       type: DataTypes.INTEGER,
+      allowNull: true,
       references: {
-        model: Finance, // References the Finance model
+        model: UserBank, // References the Finance model
+        key: "id", // Assumes the primary key of Finance model is 'id'
+      },
+    },
+
+    fromWalletAccountId: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: UserWallet, // References the Finance model
+        key: "id", // Assumes the primary key of Finance model is 'id'
+      },
+    },
+    toWalletAccountId: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: UserWallet, // References the Finance model
         key: "id", // Assumes the primary key of Finance model is 'id'
       },
     },
     issuedAt: {
-      type: DataTypes.DATE,
-      allowNull: false,
+      type: DataTypes.DATEONLY,
     },
 
+    chequeIssueDate: {
+      type: DataTypes.DATEONLY,
+      allowNull: true,
+    },
+
+    chequeCashoutDate: { type: DataTypes.DATEONLY, allowNull: true },
+
+    chequeCashoutAvailableData: {
+      type: DataTypes.DATEONLY,
+      allowNull: true,
+    },
+
+    source: {
+      type: DataTypes.STRING,
+    },
     remarks: {
       type: DataTypes.STRING,
-      allowNull: false,
+    },
+    alert: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
     },
   },
   {
     sequelize,
     modelName: "Transaction",
+    tableName: "Transaction",
+    timestamps: true,
   }
 );
-
-// Transaction.belongsTo(User, { foreignKey: "userId" });
 // Transaction.associate = (models) => {
-//   Transaction.belongsTo(models.Finance, {
-//     as: "fromAccount",
-//     foreignKey: "fromAccountId",
-//   });
-//   Transaction.belongsTo(models.Finance, {
-//     as: "toAccount",
-//     foreignKey: "toAccountId",
+//   Transaction.belongsTo(models.UserBank, {
+//     foreignKey: "toBankAccountId",
+//     as: "userbank",
 //   });
 // };
+
+// Transaction.associate = (models) => {
+//   Transaction.belongsTo(models.UserBank, {
+//     foreignKey: "fromBankAccountId",
+//     as: "userbank",
+//   });
+// };
+
+// // Transaction.belongsTo(User, { foreignKey: "userId" });
+// // Transaction.associate = (models) => {
+// //   Transaction.belongsTo(models.Finance, {
+// //     as: "fromAccount",
+// //     foreignKey: "fromAccountId",
+// //   });
+// //   Transaction.belongsTo(models.Finance, {
+// //     as: "toAccount",
+// //     foreignKey: "toAccountId",
+// //   });
+// // };
 
 module.exports = Transaction;
