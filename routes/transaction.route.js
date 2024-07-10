@@ -7,8 +7,7 @@ const {
   getTransactionById,
   getTransactionByMonthWise,
   getAllEntites,
-  getDepositOfUserBankById,
-  getWithdrawOfUserBankById,
+  getTransactionsByType,
 } = require("../controllers/transaction/transaction.controller");
 const { isLoggedIn, isAdmin } = require("../middleware/Auth");
 const { errorLogger } = require("../middleware/Logger");
@@ -20,8 +19,7 @@ router.get("/", index);
 router.get("/getAllTransaction", getAllEntites);
 router.post("/", createTransaction);
 router.get("/monthwise", getTransactionByMonthWise);
-router.route("/getDepositOfUserBankById/:id").get(getDepositOfUserBankById);
-router.route("/getWithdrawOfUserBankById/:id").get(getWithdrawOfUserBankById);
+router.get("/userBank", getTransactionsByType);
 router
   .route("/:id")
   .put(updateTransaction)
