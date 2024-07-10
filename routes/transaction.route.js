@@ -19,7 +19,7 @@ router.get("/", index);
 router.get("/getAllTransaction", getAllEntites);
 router.post("/", createTransaction);
 router.get("/monthwise", getTransactionByMonthWise);
-router.get("/userBank", getTransactionsByType);
+router.get("/userAccountTransaction", getTransactionsByType);
 router
   .route("/:id")
   .put(updateTransaction)

@@ -58,7 +58,7 @@ class CrudOperation {
     try {
       const entities = await model.findAndCountAll({
         where,
-        // include,
+        include,
         offset,
         limit: parseInt(limit),
       });
