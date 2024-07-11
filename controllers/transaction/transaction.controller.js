@@ -142,6 +142,54 @@ class transactionController {
     CrudOperation.deleteEntity(req, res, next, Transaction);
   }
 
+  static async getDepositOfUserBankById(req, res, next) {
+    const userId = req.params.id;
+    console.log("deposit", userId);
+    const where = { toBankAccountId: userId };
+
+    const include = [
+      {
+        model: UserBank,
+        as: "userbank",
+        attributes: {
+          exclude: ["updatedAt", "createAt"],
+        },
+      },
+    ];
+
+    CrudOperation.getAllEntityWithCustomIdInLimit(
+      req,
+      res,
+      next,
+      Transaction,
+      where,
+      include
+    );
+  }
+
+  static async getWithdrawOfUserBankById(req, res, next) {
+    const userId = req.params.id;
+    console.log(userId);
+    const where = { fromAccountId: userId };
+    const include = [
+      {
+        model: UserBank,
+        as: "UserBank",
+        attributes: {
+          exclude: ["updatedAt", "createAt"],
+        },
+      },
+    ];
+    CrudOperation.getAllEntityWithCustomIdInLimit(
+      req,
+      res,
+      next,
+      Transaction,
+      where,
+      include
+    );
+  }
+
   static async getTransactionByMonthWise(req, res) {
     const { year } = req.query;
 
