@@ -4871,3 +4871,6 @@ Thu, 11 Jul 2024 05:53:30 GMT	GET	/	localhost:3333	Error: Invalid token. Please 
 Thu, 11 Jul 2024 05:53:38 GMT	GET	/getDepositOfUserBankById/0	localhost:3333	Error: Data was not found
     at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Thu, 11 Jul 2024 09:06:59 GMT	GET	/getDepositOfUserBankById/0	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error

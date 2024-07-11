@@ -21,7 +21,7 @@ router.get("/", index);
 router.get("/getAllTransaction", getAllEntites);
 router.post("/", createTransaction);
 router.get("/monthwise", getTransactionByMonthWise);
-router.get("/userAccountTransaction", getTransactionsByType);
+router.get("/userbank", getTransactionsByType);
 router.route("/getDepositOfUserBankById/:id").get(getDepositOfUserBankById);
 router.route("/getWithdrawOfUserBankById/:id").get(getWithdrawOfUserBankById);
 
