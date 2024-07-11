@@ -45,6 +45,62 @@ class CrudOperation {
     }
   }
 
+  static async getAllEntities(req, res, next, model, userVerify) {
+    let where = {};
+
+    if (userVerify) {
+      const userId = req.userId;
+      where = { userId };
+    }
+
+    try {
+      const entities = await model.findAll({
+        where,
+      });
+
+      if (entities.length > 0) {
+        console.log("Entities have been fetched");
+        res.status(200).json({
+          entities,
+          totalEntities: entities.length,
+        });
+      } else {
+        return next(new AppError("Data was not found", 404));
+      }
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  }
+
+  static async getAllEntitiesWithConditions(
+    req,
+    res,
+    next,
+    model,
+    where,
+    include
+  ) {
+    try {
+      const entities = await model.findAll({
+        where,
+        // include,
+      });
+
+      if (entities.length > 0) {
+        console.log(entities);
+        console.log("Entities have been fetched");
+        res.status(200).json({
+          entities,
+          totalEntities: entities.length,
+        });
+      } else {
+        return next(new AppError("Data was not found", 404));
+      }
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  }
+
   static async getAllEntityWithCustomIdInLimit(
     req,
     res,
@@ -53,7 +109,7 @@ class CrudOperation {
     where,
     include
   ) {
-    const { page = 1, limit = 10 } = req.query;
+    const { page = 1, limit = 100 } = req.query;
     const offset = (page - 1) * limit;
     try {
       const entities = await model.findAndCountAll({
