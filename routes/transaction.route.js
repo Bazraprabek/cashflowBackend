@@ -5,7 +5,6 @@ const {
   updateTransaction,
   deleteTransaction,
   getTransactionById,
-  getTransactionByMonthWise,
   getAllEntites,
   getTransactionsByType,
   getDepositOfUserBankById,
@@ -13,6 +12,9 @@ const {
 } = require("../controllers/transaction/transaction.controller");
 const { isLoggedIn, isAdmin } = require("../middleware/Auth");
 const { errorLogger } = require("../middleware/Logger");
+const {
+  getTransactionByMonthWise,
+} = require("../controllers/transaction/monthlyTransaction.controller");
 
 const router = express.Router();
 

@@ -13,7 +13,7 @@ class transactionController {
   }
 
   static async getAllEntites(req, res, next) {
-    CrudOperation.getAllEntites(req, res, next, Transaction, false);
+    CrudOperation.getAllEntities(req, res, next, Transaction, false);
   }
 
   static async getTransactionById(req, res, next) {
@@ -69,7 +69,7 @@ class transactionController {
     ];
 
     // Call the utility function to get all matching transactions with pagination
-    await CrudOperation.getAllEntityWithCustomIdInLimit(
+    await CrudOperation.getAllEntitiesWithConditions(
       req,
       res,
       next,
