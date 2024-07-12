@@ -14,7 +14,7 @@ class ServerStarter {
   }
 
   static async startServer(app, db) {
-    const port = process.env.PORT || 3334;
+    const port = process.env.PORT || 3333;
 
     new ServerStarter().renderPages(app);
     try {

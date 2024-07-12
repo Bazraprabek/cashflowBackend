@@ -2984,3 +2984,63 @@ Sat, 06 Jul 2024 08:09:29 GMT	GET	/getAllBank	localhost:3333	Error: Invalid toke
     at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
     at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
     at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Sat, 06 Jul 2024 11:47:54 GMT	POST	/	localhost:3333	Error: Please fill the required fields !!!
+    at throwError (C:\Users\user\Desktop\cashflowBackend\utils\Const.js:4:15)
+    at entityPropsMissingError (C:\Users\user\Desktop\cashflowBackend\utils\Const.js:33:12)
+    at C:\Users\user\Desktop\cashflowBackend\controllers\user.controller.js:30:13
+    at CrudOperation.createEntity (C:\Users\user\Desktop\cashflowBackend\controllers\shared\CrudOperation.js:6:30)
+    at createuser (C:\Users\user\Desktop\cashflowBackend\controllers\user.controller.js:10:19)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:284:15	Please fill the required fields !!!	Error
+Sat, 06 Jul 2024 11:48:56 GMT	POST	/	localhost:3333	Error: Please fill the required fields !!!
+    at throwError (C:\Users\user\Desktop\cashflowBackend\utils\Const.js:4:15)
+    at entityPropsMissingError (C:\Users\user\Desktop\cashflowBackend\utils\Const.js:33:12)
+    at C:\Users\user\Desktop\cashflowBackend\controllers\user.controller.js:30:13
+    at CrudOperation.createEntity (C:\Users\user\Desktop\cashflowBackend\controllers\shared\CrudOperation.js:6:30)
+    at createuser (C:\Users\user\Desktop\cashflowBackend\controllers\user.controller.js:10:19)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:284:15	Please fill the required fields !!!	Error
+Sat, 06 Jul 2024 11:48:59 GMT	POST	/	localhost:3333	Error: Please fill the required fields !!!
+    at throwError (C:\Users\user\Desktop\cashflowBackend\utils\Const.js:4:15)
+    at entityPropsMissingError (C:\Users\user\Desktop\cashflowBackend\utils\Const.js:33:12)
+    at C:\Users\user\Desktop\cashflowBackend\controllers\user.controller.js:30:13
+    at CrudOperation.createEntity (C:\Users\user\Desktop\cashflowBackend\controllers\shared\CrudOperation.js:6:30)
+    at createuser (C:\Users\user\Desktop\cashflowBackend\controllers\user.controller.js:10:19)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:284:15	Please fill the required fields !!!	Error
+Sat, 06 Jul 2024 13:33:44 GMT	POST	/signup	localhost:3333	Error: Given entity has already been registered, try with new one !!!
+    at throwError (C:\Users\user\Desktop\cashflowBackend\utils\Const.js:4:15)
+    at entityAlreadyExistsError (C:\Users\user\Desktop\cashflowBackend\utils\Const.js:25:12)
+    at signup (C:\Users\user\Desktop\cashflowBackend\controllers\auth\auth.controller.js:85:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Given entity has already been registered, try with new one !!!	Error
+Fri, 12 Jul 2024 07:29:01 GMT	GET	/getAllBank	localhost:3333	Error: Invalid token. Please log in again.
+    at C:\Users\user\Desktop\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (C:\Users\user\Desktop\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (C:\Users\user\Desktop\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (C:\Users\user\Desktop\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
+Fri, 12 Jul 2024 07:29:01 GMT	GET	/getAllWallet	localhost:3333	Error: Invalid token. Please log in again.
+    at C:\Users\user\Desktop\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (C:\Users\user\Desktop\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (C:\Users\user\Desktop\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (C:\Users\user\Desktop\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\user\Desktop\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
