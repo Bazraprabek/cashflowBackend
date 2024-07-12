@@ -5239,3 +5239,144 @@ Fri, 12 Jul 2024 07:06:40 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Er
 Fri, 12 Jul 2024 07:06:56 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
     at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:43:26 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:44:20 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:46:46 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:47:08 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:47:17 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:47:33 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:47:47 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:48:17 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:48:36 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:48:46 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:48:54 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:49:03 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:49:08 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:49:16 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:49:37 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:49:44 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:50:03 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:50:33 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:50:39 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:50:49 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:51:27 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:51:33 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:52:00 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:53:40 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:53:48 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:54:22 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:54:23 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:54:38 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:55:18 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:55:31 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:55:46 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:55:47 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:55:56 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:56:11 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:56:17 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:58:00 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:58:11 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:58:22 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:59:10 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:59:46 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 08:08:45 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 08:08:57 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 08:34:35 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 08:35:45 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 08:35:47 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 08:35:55 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 08:38:22 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
