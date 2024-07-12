@@ -87,7 +87,7 @@ class transactionController {
       Transaction,
       async (body) => {
         let validatedData = await validateTransaction(req, next, body);
-        console.log(validatedData);
+        console.log(body);
         if (validatedData) {
           req.body = {
             ...validatedData,
@@ -170,7 +170,7 @@ class transactionController {
   static async getWithdrawOfUserBankById(req, res, next) {
     const userId = req.params.id;
     console.log(userId);
-    const where = { fromAccountId: userId };
+    const where = { fromBankAccountId: userId };
     const include = [
       {
         model: UserBank,

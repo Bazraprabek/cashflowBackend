@@ -121,7 +121,6 @@ class CrudOperation {
 
       if (entities.rows.length > 0) {
         const totalPages = Math.ceil(entities.count / limit);
-        console.log(entities.rows);
         console.log("entity has been fetched");
         res.status(200).json({
           entities: entities.rows,

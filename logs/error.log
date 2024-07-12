@@ -4980,3 +4980,262 @@ Thu, 11 Jul 2024 10:31:24 GMT	GET	/	localhost:3333	Error: Invalid token. Please 
 Thu, 11 Jul 2024 10:31:33 GMT	GET	/getDepositOfUserBankById/0	localhost:3333	Error: Data was not found
     at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Thu, 11 Jul 2024 15:36:29 GMT	GET	/getAllWallet	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
+Thu, 11 Jul 2024 15:36:29 GMT	GET	/	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Thu, 11 Jul 2024 15:36:38 GMT	GET	/getDepositOfUserBankById/0	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:133:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 03:56:40 GMT	GET	/getAllWallet	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
+Fri, 12 Jul 2024 03:56:41 GMT	GET	/	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Fri, 12 Jul 2024 03:56:50 GMT	GET	/getDepositOfUserBankById/0	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:133:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 04:10:04 GMT	GET	/getAllWallet	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
+Fri, 12 Jul 2024 04:10:04 GMT	GET	/	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Fri, 12 Jul 2024 04:10:12 GMT	GET	/getDepositOfUserBankById/0	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:133:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 04:11:42 GMT	GET	/	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Fri, 12 Jul 2024 04:11:42 GMT	GET	/getAllWallet	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
+Fri, 12 Jul 2024 04:11:52 GMT	GET	/getDepositOfUserBankById/0	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:133:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 04:13:43 GMT	GET	/getAllWallet	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
+Fri, 12 Jul 2024 04:13:43 GMT	GET	/	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:70:12)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:149:13)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at next (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:145:7)
+    at Route.dispatch (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)	Invalid token. Please log in again.	Error
+Fri, 12 Jul 2024 04:13:54 GMT	GET	/getDepositOfUserBankById/0	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:133:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 06:00:54 GMT	POST	/	localhost:3333	Error: Account does not exist.
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:113:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:89:29
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:24)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:83:5)	Account does not exist.	Error
+Fri, 12 Jul 2024 06:01:08 GMT	POST	/	localhost:3333	Error: Account does not exist.
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:113:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:89:29
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:24)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:83:5)	Account does not exist.	Error
+Fri, 12 Jul 2024 06:03:37 GMT	POST	/	localhost:3333	Error: Account does not exist.
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:113:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:89:29
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:24)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:83:5)	Account does not exist.	Error
+Fri, 12 Jul 2024 06:06:22 GMT	POST	/	localhost:3333	Error: Account does not exist.
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:115:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:89:29
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:24)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:83:5)	Account does not exist.	Error
+Fri, 12 Jul 2024 06:06:53 GMT	POST	/	localhost:3333	Error: Account does not exist.
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:114:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:89:29
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:24)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:83:5)	Account does not exist.	Error
+Fri, 12 Jul 2024 06:09:31 GMT	POST	/	localhost:3333	Error: Account does not exist.
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:114:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:89:29
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:24)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:83:5)	Account does not exist.	Error
+Fri, 12 Jul 2024 06:10:49 GMT	POST	/	localhost:3333	Error: Account does not exist.
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:115:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:89:29
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:24)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:83:5)	Account does not exist.	Error
+Fri, 12 Jul 2024 06:13:30 GMT	POST	/	localhost:3333	Error: Account does not exist.
+    at validateTransaction (D:\React\CBIT\cashflowBackend\utils\validation.js:115:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:89:29
+    at async CrudOperation.createEntity (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:7:24)
+    at async createTransaction (D:\React\CBIT\cashflowBackend\controllers\transaction\transaction.controller.js:83:5)	Account does not exist.	Error
+Fri, 12 Jul 2024 06:45:12 GMT	DELETE	/15	localhost:3333	Error: Invalid token. Please log in again.
+    at D:\React\CBIT\cashflowBackend\utils\jwt.js:29:19
+    at D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:190:16
+    at getSecret (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (D:\React\CBIT\cashflowBackend\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyTokens (D:\React\CBIT\cashflowBackend\utils\jwt.js:25:14)
+    at isLoggedIn (D:\React\CBIT\cashflowBackend\middleware\Auth.js:25:22)
+    at Layer.handle [as handle_request] (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
+    at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
+Fri, 12 Jul 2024 06:45:40 GMT	GET	/getWithdrawOfUserBankById/2	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 06:46:39 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 06:54:31 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 06:54:46 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 06:55:29 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 06:57:44 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 06:58:58 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 06:59:26 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:00:30 GMT	GET	/getWithdrawOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:00:31 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:00:52 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:01:01 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:01:20 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:01:39 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:02:44 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:02:55 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:03:03 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:03:35 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:04:38 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:05:33 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:05:56 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:06:16 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:06:33 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:06:40 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 07:06:56 GMT	GET	/getWithdrawOfUserBankById/3	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (D:\React\CBIT\cashflowBackend\controllers\shared\CrudOperation.js:132:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error

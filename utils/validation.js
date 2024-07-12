@@ -27,6 +27,7 @@ async function validateTransaction(req, next, body) {
     chequeCashoutAvailableData,
     alert,
     userId,
+    remarks,
   } = body;
 
   if (
@@ -109,6 +110,7 @@ async function validateTransaction(req, next, body) {
 
   for (const accountId of bankaccountIds) {
     const account = await UserBank.findByPk(accountId);
+
     if (!account) {
       return next(new AppError("Account does not exist.", 404));
     }
@@ -147,6 +149,7 @@ async function validateTransaction(req, next, body) {
     chequeCashoutAvailableData,
     alert,
     userId,
+    remarks,
   };
 }
 
