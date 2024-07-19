@@ -4106,3 +4106,183 @@ Tue, 09 Jul 2024 11:23:24 GMT	GET	/getAllTransaction	localhost:3333	Error: Inval
     at trim_prefix (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:328:13)
     at D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:286:9
     at Function.process_params (D:\React\CBIT\cashflowBackend\node_modules\express\lib\router\index.js:346:12)	Invalid token. Please log in again.	Error
+Wed, 10 Jul 2024 09:14:33 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 09:14:37 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 09:29:34 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 09:35:47 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 09:35:50 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 09:39:44 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 09:40:35 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 09:41:04 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 09:41:10 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 09:41:15 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 10:12:32 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 10:12:34 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Wed, 10 Jul 2024 10:12:47 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 10:12:51 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Wed, 10 Jul 2024 10:12:57 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Wed, 10 Jul 2024 10:12:57 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 10:14:31 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Wed, 10 Jul 2024 10:14:31 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Wed, 10 Jul 2024 10:15:11 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Thu, 11 Jul 2024 15:19:00 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Thu, 11 Jul 2024 15:19:00 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Thu, 11 Jul 2024 15:48:26 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Thu, 11 Jul 2024 15:48:27 GMT	GET	/getDepositOfUserBankById/0	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Thu, 11 Jul 2024 15:50:21 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Thu, 11 Jul 2024 15:50:21 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Thu, 11 Jul 2024 15:50:23 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Thu, 11 Jul 2024 15:50:23 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Thu, 11 Jul 2024 16:03:34 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Thu, 11 Jul 2024 16:03:34 GMT	GET	/getDepositOfUserBankById/0	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Thu, 11 Jul 2024 16:03:36 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Thu, 11 Jul 2024 16:03:36 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 05:24:20 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Fri, 12 Jul 2024 05:24:42 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Fri, 12 Jul 2024 05:24:45 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 05:25:03 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 12 Jul 2024 05:25:03 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Fri, 12 Jul 2024 05:27:39 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Fri, 12 Jul 2024 05:27:39 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 19 Jul 2024 08:32:26 GMT	GET	/getDepositOfUserBankById/1	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 19 Jul 2024 08:32:26 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
+Fri, 19 Jul 2024 08:41:39 GMT	GET	/getDepositOfUserBankById/0	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntityWithCustomIdInLimit (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:77:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)	Data was not found	Error
+Fri, 19 Jul 2024 08:41:39 GMT	GET	/getAllWallet	localhost:3333	Error: Data was not found
+    at CrudOperation.getAllEntites (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\shared\CrudOperation.js:41:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllWallet (C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\controllers\finance\Wallet.controller.js:35:5)
+    at async C:\z FILES\Coding\React Class\work-final\phase1\cashflowBackend\routes\wallet.route.js:21:5	Data was not found	Error
