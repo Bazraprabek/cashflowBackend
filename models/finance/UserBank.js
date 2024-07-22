@@ -38,6 +38,12 @@ UserBank.init(
       type: DataTypes.DOUBLE,
       allowNull: true,
     },
+    accountType: {
+      type: DataTypes.STRING,
+    },
+    interestRate: {
+      type: DataTypes.DOUBLE,
+    },
   },
 
   {
